@@ -60,6 +60,42 @@ The first sally our new-made knight made from his village was such a one as almo
 *** END OF THE PROJECT GUTENBERG EBOOK DON QUIXOTE ***
 """
 
+# Dash-separator format used by both real source files (no *** sentinels).
+GENJI_DASH_RAW = """\
+The Project Gutenberg eBook of The tale of Genji
+Title: The tale of Genji
+Author: Murasaki Shikibu
+Translator: Arthur Waley
+---
+
+CHAPTER I
+KIRITSUBO[1]
+
+In the reign of a certain Emperor, whose name we do not know.
+"""
+
+# Quijote body text with two volumes — CHAPTER I. appears in both volumes so
+# labels must be unique.  This fixture is already stripped of its header (i.e.
+# the result of strip_gutenberg_wrapper), so it can be fed directly to
+# tag_chapter_headings.
+QUIJOTE_TWO_VOL_BODY = """\
+
+CHAPTER I.
+WHICH TREATS OF SOMETHING
+
+Body of volume one chapter one.
+
+CHAPTER II.
+SECOND CHAPTER SUBTITLE
+
+Body of volume one chapter two.
+
+CHAPTER I.
+OF THE INTERVIEW WITH DON QUIXOTE
+
+Body of volume two chapter one.
+"""
+
 # ---------------------------------------------------------------------------
 # strip_gutenberg_wrapper tests
 # ---------------------------------------------------------------------------
@@ -90,7 +126,7 @@ def test_strip_gutenberg_wrapper_preserves_body():
 
 def test_strip_genji_footnote_markers_removes_inline_markers():
     """Inline markers like [1] and [2] must be absent after stripping."""
-    sample = "In the reign of a certain Emperor[2], whose name we do not know."
+    sample = "In the reign of a certain Emperor[2], whose name[1] we do not know."
     result = strip_genji_footnote_markers(sample)
     assert "[1]" not in result
     assert "[2]" not in result
@@ -184,3 +220,30 @@ def test_tag_chapter_headings_quijote_body_excludes_subtitle():
         # These subtitle fragments are ALL-CAPS and must be excluded
         assert "WHICH TREATS OF THE CHARACTER" not in chapter_body
         assert "OF THE FIRST SALLY" not in chapter_body
+
+
+def test_tag_chapter_headings_quijote_unique_labels_across_volumes():
+    """When CHAPTER I. appears in both volumes, all labels must be unique."""
+    chapters = tag_chapter_headings(QUIJOTE_TWO_VOL_BODY, source="quijote")
+    labels = [label for label, _ in chapters]
+    assert len(labels) == len(set(labels)), "Duplicate labels found: " + str(labels)
+    # Volume prefix must be present because the same numeral repeats
+    assert any("V1" in lbl for lbl in labels)
+    assert any("V2" in lbl for lbl in labels)
+
+
+def test_tag_chapter_headings_invalid_source():
+    """Passing an unrecognised source value must raise ValueError."""
+    with pytest.raises(ValueError, match="source must be"):
+        tag_chapter_headings("Some text", source="shakespeare")
+
+
+def test_strip_gutenberg_wrapper_handles_dash_separator():
+    """Files using a bare '---' metadata separator must have their header stripped."""
+    result = strip_gutenberg_wrapper(GENJI_DASH_RAW)
+    # Metadata lines before '---' must be gone
+    assert "Title:" not in result
+    assert "Translator:" not in result
+    # Body text must survive
+    assert "CHAPTER I" in result
+    assert "In the reign" in result
