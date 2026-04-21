@@ -22,6 +22,11 @@ def load_text(path: Union[str, Path]) -> str:
     str
         The file contents with UTF-8 BOM removed and CRLF converted to LF.
 
+    Raises
+    ------
+    FileNotFoundError
+        If the specified path does not exist.
+
     """
     # Convert to Path object if string is provided
     path = Path(path)
