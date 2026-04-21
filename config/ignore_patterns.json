@@ -1,0 +1,13 @@
+{
+  "genji": {
+    "sentence_patterns": ["^\\[\\d+\\]"],
+    "min_tokens": 8,
+    "max_tokens": 60
+  },
+  "quijote": {
+    "sentence_patterns": [],
+    "latin_pattern": "\\b(est|sunt|erat|ergo|ad|de|per|cum|non)\\b",
+    "min_tokens": 8,
+    "max_tokens": 60
+  }
+}
