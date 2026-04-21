@@ -19,6 +19,14 @@ import re
 def filter_sentences(sentences: list[str], source: str, config: dict) -> list[str]:
     """Filter sentences, removing those that are too short, too long, or match ignore patterns.
 
+    Applies six filters in sequence:
+    1. Skip blank/whitespace-only sentences
+    2. Skip sentences matching source-specific regex patterns
+    3. Skip sentences below min_tokens
+    4. Skip sentences above max_tokens
+    5. For quijote only: skip sentences matching Latin heuristic pattern
+    6. Skip all-caps sentences (3+ words and all uppercase—targets heading remnants)
+
     Parameters
     ----------
     sentences : list[str]
@@ -27,6 +35,20 @@ def filter_sentences(sentences: list[str], source: str, config: dict) -> list[st
         Either 'genji' or 'quijote'. Selects the source-specific config section.
     config : dict
         Configuration dict matching the structure of config/ignore_patterns.json.
+        Expected structure:
+        {
+            "genji": {
+                "sentence_patterns": [...],  # list of regex patterns (str or compiled)
+                "min_tokens": int,
+                "max_tokens": int
+            },
+            "quijote": {
+                "sentence_patterns": [...],
+                "latin_pattern": str or compiled regex (optional),
+                "min_tokens": int,
+                "max_tokens": int
+            }
+        }
 
     Returns
     -------
@@ -45,6 +67,17 @@ def filter_sentences(sentences: list[str], source: str, config: dict) -> list[st
             compiled_patterns.append(re.compile(pattern))
         else:
             compiled_patterns.append(pattern)
+
+    # Compile latin_regex once (Critical 1: avoid recompilation in loop)
+    # For quijote only; None for genji
+    latin_regex = None
+    if source == "quijote":
+        latin_pattern = source_config.get("latin_pattern")
+        if latin_pattern:
+            if isinstance(latin_pattern, str):
+                latin_regex = re.compile(latin_pattern)
+            else:
+                latin_regex = latin_pattern
 
     filtered = []
 
@@ -69,18 +102,14 @@ def filter_sentences(sentences: list[str], source: str, config: dict) -> list[st
             continue
 
         # Filter 5: For quijote only, skip sentences matching Latin heuristic
-        if source == "quijote":
-            latin_pattern = source_config.get("latin_pattern")
-            if latin_pattern:
-                if isinstance(latin_pattern, str):
-                    latin_regex = re.compile(latin_pattern)
-                else:
-                    latin_regex = latin_pattern
-                if latin_regex.search(sentence):
-                    continue
+        if latin_regex and latin_regex.search(sentence):
+            continue
 
         # Filter 6: Skip all-caps sentences (heading remnants)
-        if sentence.strip().isupper():
+        # Only apply to multi-word sentences (3+ words) to avoid filtering exclamations
+        # like "I" which are too short anyway (filtered by min_tokens) but should
+        # not be the reason for rejection
+        if len(sentence.split()) >= 3 and sentence.strip().isupper():
             continue
 
         # Sentence passed all filters

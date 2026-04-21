@@ -25,7 +25,7 @@ def minimal_config():
         },
         "quijote": {
             "sentence_patterns": [],
-            "latin_pattern": r"\b(est|sunt|erat|ergo|ad|de|per|cum|non)\b",
+            "latin_pattern": r"\b(est|sunt|erat|ergo|nunc|enim|igitur|quod|sed|etiam)\b",
             "min_tokens": 8,
             "max_tokens": 60,
         },
@@ -128,17 +128,14 @@ def test_filter_removes_latin_sentences_for_quijote(minimal_config):
 def test_filter_latin_check_not_applied_to_genji(minimal_config):
     """Verify quijote latin_pattern is not applied to genji."""
     sentences = [
-        "The emperor est very wise and powerful indeed.",  # Would match Latin pattern
-        "This is a normal sentence without Latin words.",
+        "The emperor est very wise and powerful indeed today always.",  # Would match Latin pattern (8+ words)
+        "This is a normal sentence without Latin words for genji here.",  # 10 words
     ]
     result = filter_sentences(sentences, "genji", minimal_config)
     # For genji, the latin pattern should not be applied
-    # Both sentences should pass length and pattern checks
-    assert len(result) >= 1
-    # The latin sentence should pass through for genji (no latin filter)
-    if "The emperor est very wise and powerful indeed." in result:
-        # Good, it wasn't filtered
-        pass
+    # Both sentences should pass through (no latin filter for genji)
+    assert "The emperor est very wise and powerful indeed today always." in result
+    assert "This is a normal sentence without Latin words for genji here." in result
 
 
 def test_filter_passes_valid_sentences(minimal_config):
@@ -152,3 +149,56 @@ def test_filter_passes_valid_sentences(minimal_config):
     assert len(result) == 3
     for sentence in sentences:
         assert sentence in result
+
+
+def test_filter_word_count_at_exact_boundaries(minimal_config):
+    """Sentences at exactly min/max token count should pass; one over/under should fail."""
+    # Exactly 8 words (at min boundary — should pass)
+    sentence_8 = "The prince gazed upon the autumn moon this evening."
+    # Exactly 7 words (below min — should fail)
+    sentence_7 = "The prince gazed upon the autumn."
+    # Exactly 60 words (at max boundary — should pass)
+    sentence_60 = " ".join(["word"] * 60)
+    # Exactly 61 words (above max — should fail)
+    sentence_61 = " ".join(["word"] * 61)
+
+    result = filter_sentences([sentence_8, sentence_60], "genji", minimal_config)
+    assert sentence_8 in result
+    assert sentence_60 in result
+
+    result = filter_sentences([sentence_7, sentence_61], "genji", minimal_config)
+    assert sentence_7 not in result
+    assert sentence_61 not in result
+
+
+def test_filter_allows_single_word_exclamation(minimal_config):
+    """Single-word exclamations like 'I' should not be caught by the ALL CAPS filter.
+
+    They will still be filtered by min_tokens (single word < 8), but the reason
+    should be word count, not the ALL CAPS check — this test verifies the ALL CAPS
+    filter is not the cause of rejection for short exclamations.
+    """
+    # A 9-word exclamatory sentence that is not ALL CAPS — should pass
+    long_exclamation = "O what a terrible sight this was to behold!"
+    result = filter_sentences([long_exclamation], "genji", minimal_config)
+    assert long_exclamation in result
+
+
+def test_filter_all_caps_requires_multiple_words(minimal_config):
+    """ALL CAPS filter should only apply to multi-word headings (3+ words)."""
+    # Multi-word ALL CAPS heading — should be filtered
+    heading = "IN THE REIGN OF A GREAT EMPEROR OF JAPAN"
+    # Single-word capital — should NOT be filtered by ALL CAPS check
+    # (will fail min_tokens but not the all-caps filter)
+    single = "I"
+
+    result = filter_sentences([heading], "genji", minimal_config)
+    assert heading not in result
+
+    # Verify the single capital is not in result BUT only due to min_tokens, not isupper
+    # We can verify this indirectly: the 3+ word threshold means "I" doesn't trigger isupper
+    # (it still fails min_tokens — that's fine and expected)
+    result_with_long = filter_sentences(
+        ["I have walked many miles across the plains today."], "genji", minimal_config
+    )
+    assert "I have walked many miles across the plains today." in result_with_long

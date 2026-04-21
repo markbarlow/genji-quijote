@@ -6,7 +6,7 @@
   },
   "quijote": {
     "sentence_patterns": [],
-    "latin_pattern": "\\b(est|sunt|erat|ergo|ad|de|per|cum|non)\\b",
+    "latin_pattern": "\\b(est|sunt|erat|ergo|nunc|enim|igitur|quod|sed|etiam)\\b",
     "min_tokens": 8,
     "max_tokens": 60
   }
