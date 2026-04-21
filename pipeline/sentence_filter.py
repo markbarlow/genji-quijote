@@ -80,7 +80,7 @@ def filter_sentences(sentences: list[str], source: str, config: dict) -> list[st
                     continue
 
         # Filter 6: Skip all-caps sentences (heading remnants)
-        if sentence.isupper():
+        if sentence.strip().isupper():
             continue
 
         # Sentence passed all filters
