@@ -4,7 +4,8 @@
       "Bash(python *)",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(tee /tmp/test_output.txt)"
     ]
   }
 }

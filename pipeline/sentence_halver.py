@@ -31,7 +31,12 @@ def halve_sentence(sentence: str, config: dict) -> tuple[str, str, str] | tuple[
                                             single characters are treated as punctuation
                                             (matched against the last char of the previous
                                             word), multi-character strings are conjunctions
-                                            (matched against the word itself)
+                                            (matched against the word itself).
+                                            Single-character entries are matched against the
+                                            last character of the preceding token. Fused em
+                                            dashes (e.g. "word—word" with no surrounding
+                                            spaces) are not matched; only trailing em dashes
+                                            ("word—") are.
 
     Returns
     -------
@@ -69,12 +74,12 @@ def halve_sentence(sentence: str, config: dict) -> tuple[str, str, str] | tuple[
     window_end: int = min(n - 1, mid + window)
 
     # Step 5 — Build a candidate list ordered by closeness to the midpoint.
-    # We alternate left and right from mid so that the CLOSEST candidate is
-    # checked first. This implements "closest to midpoint wins" without needing
-    # a sort pass.
+    # All indices in range are sorted by distance from mid (ties broken left-first).
+    # This ensures the CLOSEST candidate is checked first, implementing "closest to
+    # midpoint wins".
     candidates: list[int] = _indices_by_closeness(mid, window_start, window_end)
 
-    # Step 5 (cont.) — Walk the candidates in closeness order. For each split
+    # Step 5b — Walk the candidates in closeness order. For each split
     # point i we check two conditions:
     #   a) words[i] is itself a boundary conjunction (e.g. "but", "and")
     #   b) words[i-1] ends with a boundary punctuation character (e.g. ',', ';')
@@ -125,9 +130,6 @@ def halve_sentence(sentence: str, config: dict) -> tuple[str, str, str] | tuple[
             first_words = words[:split_index]
             second_words = words[split_index:]
             strategy = "word_midpoint"
-            # Check again after fallback (step-2 guard makes this pass, but be explicit).
-            if len(first_words) < minimum or len(second_words) < minimum:
-                return (None, None, "rejected")
         else:
             # Midpoint split itself violated minimum — sentence is too short.
             return (None, None, "rejected")
@@ -144,10 +146,10 @@ def halve_sentence(sentence: str, config: dict) -> tuple[str, str, str] | tuple[
 def _indices_by_closeness(mid: int, start: int, end: int) -> list[int]:
     """Return indices in [start, end] ordered by closeness to mid, ties broken left-first.
 
-    We scan outward from mid in alternating left/right steps so that closer
-    indices appear first. This ordering means the first valid boundary we
-    encounter in the main loop is automatically the closest to the midpoint —
-    no sorting or distance comparison needed later.
+    All indices in range are sorted by distance from mid; ties are broken by
+    preferring the lower index (left-biased). This ordering ensures the first
+    valid boundary encountered in the main loop is automatically the closest to
+    the midpoint.
 
     Parameters
     ----------

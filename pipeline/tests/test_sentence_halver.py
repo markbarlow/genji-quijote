@@ -78,7 +78,7 @@ def test_halve_at_conjunction_in_window():
 
 
 # ---------------------------------------------------------------------------
-# 5. Closest-to-midpoint wins
+# 3. Closest-to-midpoint wins
 # ---------------------------------------------------------------------------
 
 def test_halve_prefers_closest_to_midpoint():
@@ -104,7 +104,7 @@ def test_halve_prefers_closest_to_midpoint():
 
 
 # ---------------------------------------------------------------------------
-# 6-8. Fallback and strategy labels
+# 4. Fallback and strategy labels
 # ---------------------------------------------------------------------------
 
 def test_halve_falls_back_to_midpoint_when_no_boundary():
@@ -137,7 +137,7 @@ def test_halve_strategy_rejected():
 
 
 # ---------------------------------------------------------------------------
-# 9-11. Rejection cases
+# 5. Rejection cases
 # ---------------------------------------------------------------------------
 
 def test_halve_rejected_when_too_short():
@@ -168,13 +168,13 @@ def test_halve_rejected_when_boundary_creates_short_half():
     first, second, strategy = halve_sentence(sentence, TEST_CONFIG)
     # mid=6; 'and' at index 2 is in window but creates a 2-word first half → skip it.
     # Fallback: word_midpoint at 6 gives halves of 6 and 6 words — both valid.
-    assert strategy in ("word_midpoint", "clause_boundary")
+    assert strategy == "word_midpoint"
     assert first is not None
     assert second is not None
 
 
 # ---------------------------------------------------------------------------
-# 12-13. Round-trip rejoining
+# 6. Round-trip rejoining
 # ---------------------------------------------------------------------------
 
 def test_halve_no_mid_word_split():
@@ -194,7 +194,7 @@ def test_halve_halves_rejoin_to_original_at_clause_boundary():
 
 
 # ---------------------------------------------------------------------------
-# 14-15. Minimum half tokens respected
+# 7. Minimum half tokens respected
 # ---------------------------------------------------------------------------
 
 def test_halve_minimum_half_tokens_respected_for_first_half():
@@ -214,7 +214,7 @@ def test_halve_minimum_half_tokens_respected_for_second_half():
 
 
 # ---------------------------------------------------------------------------
-# 16-17. Even and odd word counts
+# 8. Even and odd word counts
 # ---------------------------------------------------------------------------
 
 def test_halve_even_word_count():
@@ -241,7 +241,7 @@ def test_halve_odd_word_count():
 
 
 # ---------------------------------------------------------------------------
-# 18. Window edge
+# 9. Window edge
 # ---------------------------------------------------------------------------
 
 def test_halve_boundary_at_edge_of_window():
