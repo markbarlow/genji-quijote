@@ -1,0 +1,286 @@
+{
+  "genji": {
+    "Genji": {
+      "rank": "major",
+      "variants": ["Prince Genji", "Hikaru Genji", "Shining Prince", "the Shining One"],
+      "score_weight": 1.0
+    },
+    "Murasaki": {
+      "rank": "major",
+      "variants": ["Lady Murasaki", "the young Murasaki", "Murasaki no Ue"],
+      "score_weight": 0.95
+    },
+    "Fujitsubo": {
+      "rank": "major",
+      "variants": ["Lady Fujitsubo", "Fujitsubo no Miya", "Princess Fujitsubo"],
+      "score_weight": 0.9
+    },
+    "To_no_Chujo": {
+      "rank": "major",
+      "variants": ["Tō no Chūjō", "To no Chujo", "the Captain", "Lord Tō"],
+      "score_weight": 0.85
+    },
+    "Yugiri": {
+      "rank": "major",
+      "variants": ["Yūgiri", "Lord Yugiri", "Yugiri no Daisho"],
+      "score_weight": 0.8
+    },
+    "Kaoru": {
+      "rank": "major",
+      "variants": ["Lord Kaoru", "Kaoru no Kimi", "the fragrant one"],
+      "score_weight": 0.8
+    },
+    "Niou": {
+      "rank": "major",
+      "variants": ["Prince Niou", "Niou no Miya", "Niounomiya"],
+      "score_weight": 0.8
+    },
+    "Suzaku": {
+      "rank": "major",
+      "variants": ["Emperor Suzaku", "Suzaku-in", "ex-Emperor Suzaku"],
+      "score_weight": 0.82
+    },
+    "Aoi": {
+      "rank": "major",
+      "variants": ["Princess Aoi", "Lady Aoi", "Aoi no Ue"],
+      "score_weight": 0.75
+    },
+    "Rokujō": {
+      "rank": "major",
+      "variants": ["Princess Rokujō", "Lady Rokujō", "Rokujo no Miyasudokoro"],
+      "score_weight": 0.8
+    },
+    "Tamakatsura": {
+      "rank": "major",
+      "variants": ["Lady Tamakatsura", "Tamakazura"],
+      "score_weight": 0.75
+    },
+    "Kashiwagi": {
+      "rank": "major",
+      "variants": ["Lord Kashiwagi", "the Guards Captain"],
+      "score_weight": 0.78
+    },
+    "Nyosan": {
+      "rank": "major",
+      "variants": ["Third Princess", "San no Miya", "Princess Nyosan", "Onna Sannomiya"],
+      "score_weight": 0.78
+    },
+    "Akashi_Lady": {
+      "rank": "major",
+      "variants": ["Lady of Akashi", "Akashi no Kimi", "Akashi no Nyōgo"],
+      "score_weight": 0.75
+    },
+    "Old_Emperor": {
+      "rank": "major",
+      "variants": ["the Old Emperor", "Kiritsubo Emperor", "the Emperor", "His Majesty"],
+      "score_weight": 0.75
+    },
+    "Kōkiden": {
+      "rank": "major",
+      "variants": ["Lady Kōkiden", "Kokiden", "Kokiden no Nyōgo"],
+      "score_weight": 0.72
+    },
+    "Ryōzen": {
+      "rank": "major",
+      "variants": ["Emperor Ryōzen", "Reizei Emperor", "the New Emperor"],
+      "score_weight": 0.72
+    },
+    "Yūgao": {
+      "rank": "major",
+      "variants": ["Yugao", "Lady Yugao", "the evening face"],
+      "score_weight": 0.72
+    },
+    "Koremitsu": {
+      "rank": "minor",
+      "variants": ["Genji's retainer", "Koremitsu no Kami"],
+      "score_weight": 0.72
+    },
+    "Akashi_Princess": {
+      "rank": "minor",
+      "variants": ["Princess Akashi", "the Akashi Princess", "Akashi Chūgū"],
+      "score_weight": 0.72
+    },
+    "Kiritsubo": {
+      "rank": "minor",
+      "variants": ["Lady Kiritsubo", "the Kiritsubo consort", "Genji's mother"],
+      "score_weight": 0.45
+    },
+    "Akikonomu": {
+      "rank": "minor",
+      "variants": ["Lady Akikonomu", "Akikonomunomiya", "the Ise Vestal"],
+      "score_weight": 0.42
+    },
+    "Oborozukiyo": {
+      "rank": "minor",
+      "variants": ["Princess Oborozukiyo", "Lady Oborozukiyo", "Oborozuki"],
+      "score_weight": 0.45
+    },
+    "Utsusemi": {
+      "rank": "minor",
+      "variants": ["Lady Utsusemi", "the cicada shell"],
+      "score_weight": 0.42
+    },
+    "Suyetsumuhana": {
+      "rank": "minor",
+      "variants": ["Lady Suyetsumuhana", "Suyetsumu", "the Safflower Lady"],
+      "score_weight": 0.35
+    },
+    "Hyōbukyō": {
+      "rank": "minor",
+      "variants": ["Prince Hyōbukyō", "Hyobukyō no Miya"],
+      "score_weight": 0.38
+    },
+    "Ochiba": {
+      "rank": "minor",
+      "variants": ["Princess Ochiba", "Ochiba no Miya", "the Falling Leaves Princess"],
+      "score_weight": 0.42
+    },
+    "Makibashira": {
+      "rank": "minor",
+      "variants": ["Lady Makibashira", "Higekuro's wife"],
+      "score_weight": 0.35
+    },
+    "Higekuro": {
+      "rank": "minor",
+      "variants": ["Lord Higekuro", "General Higekuro"],
+      "score_weight": 0.38
+    },
+    "Kumoi": {
+      "rank": "minor",
+      "variants": ["Lady Kumoi", "Kumoi no Kari"],
+      "score_weight": 0.38
+    },
+    "Asagao": {
+      "rank": "minor",
+      "variants": ["Princess Asagao", "Lady Asagao"],
+      "score_weight": 0.35
+    },
+    "Falling_Flowers_Lady": {
+      "rank": "minor",
+      "variants": ["Lady from the Village of Falling Flowers", "Hanachirusato"],
+      "score_weight": 0.35
+    },
+    "Yoshikiyo": {
+      "rank": "minor",
+      "variants": ["Genji's retainer Yoshikiyo"],
+      "score_weight": 0.30
+    },
+    "Ukon": {
+      "rank": "minor",
+      "variants": ["Ukon no Jō"],
+      "score_weight": 0.30
+    }
+  },
+  "quijote": {
+    "Don_Quixote": {
+      "rank": "major",
+      "variants": ["Don Quijote", "Alonso Quixano", "the Knight of La Mancha", "the Knight of the Sad Countenance", "el Caballero de la Triste Figura"],
+      "score_weight": 1.0
+    },
+    "Sancho_Panza": {
+      "rank": "major",
+      "variants": ["Sancho", "the squire", "Governor Sancho"],
+      "score_weight": 0.95
+    },
+    "Dulcinea": {
+      "rank": "major",
+      "variants": ["Dulcinea del Toboso", "Aldonza Lorenzo", "my lady Dulcinea"],
+      "score_weight": 0.85
+    },
+    "Rocinante": {
+      "rank": "major",
+      "variants": ["Don Quixote's horse", "the horse"],
+      "score_weight": 0.85
+    },
+    "Samson_Carrasco": {
+      "rank": "major",
+      "variants": ["Sansón Carrasco", "Knight of the Mirrors", "Knight of the White Moon", "the bachelor"],
+      "score_weight": 0.75
+    },
+    "The_Priest": {
+      "rank": "major",
+      "variants": ["Pedro Pérez", "the curate", "the vicar"],
+      "score_weight": 0.72
+    },
+    "Cardenio": {
+      "rank": "major",
+      "variants": ["the Ragged Knight", "the Knight of the Mountain", "Cardenio de la Raza"],
+      "score_weight": 0.72
+    },
+    "Dorothea": {
+      "rank": "major",
+      "variants": ["Princess Micomicona", "Dorotea"],
+      "score_weight": 0.72
+    },
+    "Don_Fernando": {
+      "rank": "major",
+      "variants": ["Fernando", "Don Fernando de los Ríos"],
+      "score_weight": 0.70
+    },
+    "Lucinda": {
+      "rank": "major",
+      "variants": ["Luscinda"],
+      "score_weight": 0.68
+    },
+    "The_Barber": {
+      "rank": "minor",
+      "variants": ["Maese Nicolás", "Nicholas the Barber", "the barber"],
+      "score_weight": 0.50
+    },
+    "Teresa_Panza": {
+      "rank": "minor",
+      "variants": ["Teresa", "Sancho's wife", "Juana Panza"],
+      "score_weight": 0.48
+    },
+    "The_Duke": {
+      "rank": "minor",
+      "variants": ["the Duke", "the Duke and Duchess"],
+      "score_weight": 0.52
+    },
+    "The_Duchess": {
+      "rank": "minor",
+      "variants": ["the Duchess", "Doña Rodríguez's mistress"],
+      "score_weight": 0.50
+    },
+    "Gines_de_Pasamonte": {
+      "rank": "minor",
+      "variants": ["Ginés de Pasamonte", "Master Pedro", "Ginesillo de Parapilla"],
+      "score_weight": 0.48
+    },
+    "Cide_Hamete": {
+      "rank": "minor",
+      "variants": ["Cide Hamete Benengeli", "Benegeli", "the Moorish historian"],
+      "score_weight": 0.45
+    },
+    "Antonia": {
+      "rank": "minor",
+      "variants": ["Quixote's niece"],
+      "score_weight": 0.40
+    },
+    "Marcella": {
+      "rank": "minor",
+      "variants": ["Marcela", "the shepherdess"],
+      "score_weight": 0.38
+    },
+    "Maritornes": {
+      "rank": "minor",
+      "variants": [],
+      "score_weight": 0.35
+    },
+    "The_Canon": {
+      "rank": "minor",
+      "variants": ["the canon", "the canon of Toledo"],
+      "score_weight": 0.35
+    },
+    "Innkeeper_1": {
+      "rank": "minor",
+      "variants": ["the first innkeeper", "the innkeeper who knighted Quixote"],
+      "score_weight": 0.32
+    },
+    "Andrew": {
+      "rank": "minor",
+      "variants": ["Andrés"],
+      "score_weight": 0.30
+    }
+  }
+}
