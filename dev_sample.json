@@ -1,0 +1,1530 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-04-23T17:07:34.912497+00:00",
+    "total": 50,
+    "window_size": 30
+  },
+  "pairs": [
+    {
+      "id": "gq-0001",
+      "display": "It should be explained that during the period when Tō no Chūjō kept Yūgiri away from Kumoi,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "It should be explained that during the period when Tō no Chūjō kept Yūgiri away from Kumoi,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "It should be explained that during the period when Tō no Chūjō kept\nYūgiri away from Kumoi, he had carried on a secret affair with this\ndaughter of Koremitsu.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "To_no_Chujo",
+        "Yugiri",
+        "Koremitsu",
+        "Kumoi"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.2,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER X",
+        "sentence_index": 635,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0002",
+      "display": "For example, her stepmother had even held her responsible for Makibashira’s fall;and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "For example, her stepmother had even held her responsible for Makibashira’s fall;",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "For example, her stepmother had even held her responsible\nfor Makibashira’s fall; it was Murasaki’s jealousy (so this woman\nasserted) that had forced Genji to plant Tamakatsura in Higekuro’s way!",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Murasaki",
+        "Tamakatsura",
+        "Makibashira",
+        "Higekuro"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1775,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER VI",
+        "sentence_index": 211,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0003",
+      "display": "For several days Koremitsu didand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "For several days Koremitsu did",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "For several days Koremitsu did not present himself at Genji’s palace.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER IV",
+        "sentence_index": 69,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0004",
+      "display": "Koremitsu had patiently continued theand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Koremitsu had patiently continued the",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Koremitsu had patiently continued\nthe enquiry with which Genji entrusted him.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER IV",
+        "sentence_index": 127,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0005",
+      "display": "But Koremitsu regarded this as too great a tribute to so unimportant a lady,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "But Koremitsu regarded this as too great a tribute to so unimportant a lady,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "But Koremitsu regarded this as too great a\ntribute to so unimportant a lady, and insisted upon Genji riding his\nhorse, while he walked by his side.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER IV",
+        "sentence_index": 151,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0006",
+      "display": "The story of Genji’s pollution had turned all visitors from the door,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "The story of Genji’s pollution had turned all visitors from the door,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "The story of Genji’s pollution had turned all\nvisitors from the door, and Koremitsu found his palace utterly\ndeserted.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER IV",
+        "sentence_index": 408,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0007",
+      "display": "Koremitsu too was sorely troubled, for he felt that despite all Genji’s insistence,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Koremitsu too was sorely troubled, for he felt that despite all Genji’s insistence,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Koremitsu too was sorely troubled,\nfor he felt that despite all Genji’s insistence, he ought never to\nhave allowed him, fever-stricken as he was, to embark upon this\ndisastrous journey.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER IV",
+        "sentence_index": 462,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0008",
+      "display": "Koremitsu accordingly sent one of the lesser attendants to the house,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Koremitsu accordingly sent one of the lesser attendants to the house,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Koremitsu accordingly sent one of the lesser attendants\nto the house, instructing him to give the impression that Genji had\ncome on purpose to enquire.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER V",
+        "sentence_index": 370,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0009",
+      "display": "Having delivered this message Koremitsu brought in some of Genji’s servantsand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Having delivered this message Koremitsu brought in some of Genji’s servants",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Having delivered this\nmessage Koremitsu brought in some of Genji’s servants whom he had\nsent to mount guard over the house that night.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER V",
+        "sentence_index": 507,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0010",
+      "display": "Nor was she far wrong,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Nor was she far wrong,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Nor was she far wrong, for Koremitsu was indeed wondering of\nwhat sort Genji’s misdemeanours could have been.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER V",
+        "sentence_index": 517,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0011",
+      "display": "On hearing Koremitsu’s report Genji’s heart was filled with pityand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "On hearing Koremitsu’s report Genji’s heart was filled with pity",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "On hearing Koremitsu’s report Genji’s heart was filled with pity for\nthe child’s state and he would like to have gone to her at once.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER V",
+        "sentence_index": 518,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0012",
+      "display": "‘What a long time you have been!’ exclaimed Genji,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "‘What a long time you have been!’ exclaimed Genji,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "‘What a long time you have been!’ exclaimed Genji, when Koremitsu\nfinally reappeared.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER XV",
+        "sentence_index": 249,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0013",
+      "display": "The dancer from Genji’s household was the daughter of Koremitsu,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "The dancer from Genji’s household was the daughter of Koremitsu,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "The dancer from Genji’s household was the\ndaughter of Koremitsu, who had now become Governor of the province\nof Tsu.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V2 CHAPTER III",
+        "sentence_index": 429,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0014",
+      "display": "When Genji first suggested it, Koremitsu did not at all take to the idea,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "When Genji first suggested it, Koremitsu did not at all take to the idea,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "When Genji first suggested it, Koremitsu did not\nat all take to the idea, feeling that his family had no claim to such\nan honour.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V2 CHAPTER III",
+        "sentence_index": 431,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0015",
+      "display": "Although it was early days to begin thinking about the little Akashi Princess’s Initiation,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Although it was early days to begin thinking about the little Akashi Princess’s Initiation,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Although it was early days to begin thinking about the little\nAkashi Princess’s Initiation, Genji seemed bent upon celebrating it\nimmediately.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Akashi_Princess"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER IV",
+        "sentence_index": 0,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0016",
+      "display": "One day Genji brought theand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "One day Genji brought the",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "One day Genji brought the Akashi Princess to see her.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Akashi_Princess"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER VII",
+        "sentence_index": 130,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0017",
+      "display": "The Akashi Princess was now back at the Imperial Palace;and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "The Akashi Princess was now back at the Imperial Palace;",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "The Akashi Princess was now back at the Imperial Palace; but Genji\npersuaded her to let Prince Niou stay with him for a while.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Niou",
+        "Akashi_Princess"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1767,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER XII",
+        "sentence_index": 44,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0018",
+      "display": "Murasaki had adopted the Akashi Princess in its infancy,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Murasaki had adopted the Akashi Princess in its infancy,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Murasaki had adopted the Akashi Princess in its infancy, and according\nto the usual practice it would now be she who followed the girl to\nthe Eastern Palace.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Murasaki",
+        "Akashi_Princess"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1694,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER V",
+        "sentence_index": 142,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0019",
+      "display": "A post in the Lady of the Bedchamber’s office was vacant, andand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "A post in the Lady of the Bedchamber’s office was vacant, and",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "A\npost in the Lady of the Bedchamber’s office was vacant, and when the\nEmperor suggested that Koremitsu’s daughter might care to take it Genji\nnaturally accepted for her with alacrity.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1663,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V2 CHAPTER III",
+        "sentence_index": 472,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0020",
+      "display": "Genji, he was told,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Genji, he was told,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Genji, he was told, was with the Akashi Princess.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Akashi_Princess"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1663,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER IX",
+        "sentence_index": 132,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0021",
+      "display": "At the time when Ochiba was giving him no encouragementand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "At the time when Ochiba was giving him no encouragement",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "At the time when Ochiba was giving him no encouragement and Yūgiri’s\ndistraction was most trying to those who lived with him, Kumoi suddenly\nreceived a letter from Koremitsu’s daughter.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Yugiri",
+        "Koremitsu",
+        "Ochiba",
+        "Kumoi"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1656,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER X",
+        "sentence_index": 628,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0022",
+      "display": "The Emperor had heard that Genji was still on intimate terms with his aunt the Princess Oborozuki,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "The Emperor had heard that Genji was still on intimate terms with his aunt the Princess Oborozuki,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "The Emperor had heard that Genji was still on intimate\nterms with his aunt the Princess Oborozuki, and had on his own account\nobserved many signs of such an attachment.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Old_Emperor",
+        "Oborozukiyo"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1542,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER X",
+        "sentence_index": 400,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0023",
+      "display": "But under the influence of Kōkiden, who had subsequently thrust Oborozuki upon him,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "But under the influence of Kōkiden, who had subsequently thrust Oborozuki upon him,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "But under the influence of Kōkiden, who had\nsubsequently thrust Oborozuki upon him, he kept Nyosan’s mother very\nmuch in the background.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Nyosan",
+        "Kōkiden",
+        "Oborozukiyo"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1542,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER VI",
+        "sentence_index": 7,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0024",
+      "display": "Utsusemi meanwhile had persuaded herself that she was veryand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Utsusemi meanwhile had persuaded herself that she was very",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Utsusemi meanwhile had persuaded herself that she was very glad Genji\nhad forgotten to pay his threatened visit.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Utsusemi"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1517,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER III",
+        "sentence_index": 72,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0025",
+      "display": "‘All the same, I think it will be best under the circumstances if the requestand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "‘All the same, I think it will be best under the circumstances if the request",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "‘All the same, I think it\nwill be best under the circumstances if the request for Akikonomu’s\nPresentation came from you,’ said Genji.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Akikonomu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1517,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER XIV",
+        "sentence_index": 439,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0026",
+      "display": "But it was in Genji’s own palace and not, for the moment at any rate,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "But it was in Genji’s own palace and not, for the moment at any rate,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "But it was in Genji’s own palace and not, for\nthe moment at any rate, in the Emperor’s household that Lady Akikonomu\nwas to be installed.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Old_Emperor",
+        "Akikonomu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1517,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER XIV",
+        "sentence_index": 444,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0027",
+      "display": "Amid intense excitement Princess Akikonomu’s side producedand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Amid intense excitement Princess Akikonomu’s side produced",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Amid intense excitement Princess Akikonomu’s side\nproduced the roll containing Genji’s sketches at Suma.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Akikonomu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1517,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER XVII",
+        "sentence_index": 184,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0028",
+      "display": "‘We decided the other day,’ said Genji to Murasaki,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "‘We decided the other day,’ said Genji to Murasaki,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "‘We decided the other day,’ said\nGenji to Murasaki, ‘that Lady Akikonomu’s season is Autumn, and yours\nSpring.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Murasaki",
+        "Akikonomu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1517,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V2 CHAPTER II",
+        "sentence_index": 215,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0029",
+      "display": "The claims, then, were pretty equally divided,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "The claims, then, were pretty equally divided,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "The claims, then, were pretty equally divided, and after\nsome hesitation Genji followed his own inclinations by appointing\nAkikonomu to share the Throne.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Akikonomu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1517,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V2 CHAPTER III",
+        "sentence_index": 131,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0030",
+      "display": "After performing before the Emperor, the Mummers visited the quarters of Lady Akikonomu,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "After performing before the Emperor, the Mummers visited the quarters of Lady Akikonomu,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "After performing before the Emperor, the Mummers visited the quarters\nof Lady Akikonomu, and finally finished their round very late in the\nday at the ex-Emperor Suzaku’s palace.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Suzaku",
+        "Old_Emperor",
+        "Akikonomu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1517,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER III",
+        "sentence_index": 360,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0031",
+      "display": "He was the best-looking and most promising of Tō no Chūjō’s sons,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "He was the best-looking and most promising of Tō no Chūjō’s sons,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "He was the best-looking and most promising\nof Tō no Chūjō’s sons, and as she watched him from within, Ochiba was\nastonished by his resemblance to Kashiwagi.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "To_no_Chujo",
+        "Kashiwagi",
+        "Ochiba"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1517,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER X",
+        "sentence_index": 616,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0032",
+      "display": "The Empress Akikonomu wrote constantlyand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "The Empress Akikonomu wrote constantly",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "The Empress Akikonomu wrote constantly to Genji at this time.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Akikonomu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1517,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER XI",
+        "sentence_index": 137,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0033",
+      "display": "It was not as if Kumoi were a stranger;and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "It was not as if Kumoi were a stranger;",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "It was not as if Kumoi were a stranger;\nshe was Kashiwagi’s sister, and Ochiba had made great friends with\nher.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Kashiwagi",
+        "Ochiba",
+        "Kumoi"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1512,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER X",
+        "sentence_index": 115,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0034",
+      "display": "Hyōbukyō could not fail to notice that Genji was suddenlyand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Hyōbukyō could not fail to notice that Genji was suddenly",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Hyōbukyō could not fail to notice that Genji was\nsuddenly treating him with an affection which he had never displayed\nbefore.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Hyōbukyō"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER VII",
+        "sentence_index": 79,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0035",
+      "display": "It may well be imagined with what consternation both Prince Hyōbukyō her brotherand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "It may well be imagined with what consternation both Prince Hyōbukyō her brother",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "It may well be\nimagined with what consternation both Prince Hyōbukyō her brother and\nGenji himself received this utterly unexpected announcement.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Hyōbukyō"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER X",
+        "sentence_index": 472,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0036",
+      "display": "Her father Prince Hyōbukyō had never put himself out for her,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Her father Prince Hyōbukyō had never put himself out for her,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Her father Prince Hyōbukyō had\nnever put himself out for her, and since Genji’s disgrace he stopped\nwriting and no longer even enquired about her.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Hyōbukyō"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER XII",
+        "sentence_index": 108,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0037",
+      "display": "Prince Hyōbukyō had treated Genji with markedand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Prince Hyōbukyō had treated Genji with marked",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Prince Hyōbukyō had treated Genji with marked coldness in the period\nbefore his exile.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Hyōbukyō"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER XIV",
+        "sentence_index": 235,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0038",
+      "display": "If Genji (and this seemed hardly credible) were waiting to secure Kumoiand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "If Genji (and this seemed hardly credible) were waiting to secure Kumoi",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "If Genji (and this seemed hardly credible) were waiting to secure Kumoi\nfor his own son Yūgiri, let him raise the boy to a decent rank.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Yugiri",
+        "Kumoi"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V2 CHAPTER VIII",
+        "sentence_index": 196,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0039",
+      "display": "The matter of Yūgiriand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "The matter of Yūgiri",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "The matter of Yūgiri and Kumoi had not been so much as mentioned\nduring Tō no Chūjō’s visit.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "To_no_Chujo",
+        "Yugiri",
+        "Kumoi"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER I",
+        "sentence_index": 212,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0040",
+      "display": "Prince Higekuro served in the same Guard Regiment as Yūgiri,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Prince Higekuro served in the same Guard Regiment as Yūgiri,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Prince Higekuro served in the same Guard Regiment as Yūgiri, and\nwas continually seeking him out in order to have long and emotional\nconversations about Tamakatsura.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Yugiri",
+        "Tamakatsura",
+        "Higekuro"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER II",
+        "sentence_index": 49,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0041",
+      "display": "It was the existence of this unfortunate entanglementand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "It was the existence of this unfortunate entanglement",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "It was the existence of this unfortunate entanglement that had\ndiscouraged Genji from furthering Prince Higekuro’s suit.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Higekuro"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER II",
+        "sentence_index": 59,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0042",
+      "display": "‘I am very much perturbed by what you have justand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "‘I am very much perturbed by what you have just",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "‘I am very much perturbed by what you have just told I me,’ said Genji\nto Prince Higekuro some months later.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Higekuro"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER III",
+        "sentence_index": 0,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0043",
+      "display": "One morning, hearing that Prince Higekuro had for a shortand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "One morning, hearing that Prince Higekuro had for a short",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "One morning, hearing that Prince Higekuro had for a short while quitted\nher apartments, Genji once more paid her a visit.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Higekuro"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER III",
+        "sentence_index": 55,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0044",
+      "display": "When Higekuro saw the basket with its accompanying note,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "When Higekuro saw the basket with its accompanying note,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "When Higekuro\nsaw the basket with its accompanying note, he burst out laughing: ‘What\nan extraordinary man this Genji is!’",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Higekuro"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER III",
+        "sentence_index": 486,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0045",
+      "display": "As for Kumoi, he remembered how often he had praised in herand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "As for Kumoi, he remembered how often he had praised in her",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "As for Kumoi,\nhe remembered how often he had praised in her hearing the pleasant\nrelations that prevailed between the members of Genji’s household.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Kumoi"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1483,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER X",
+        "sentence_index": 360,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0046",
+      "display": "Koremitsu’s son Hyōye no Jō was now sent to dig them up,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Koremitsu’s son Hyōye no Jō was now sent to dig them up,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Koremitsu’s son Hyōye no Jō\nwas now sent to dig them up, and they were finally laid before Prince\nSochi by Yūgiri.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Yugiri",
+        "Koremitsu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1475,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER IV",
+        "sentence_index": 50,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0047",
+      "display": "It was of course quite wrong that Kaoru, the child of a commoner,and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "It was of course quite wrong that Kaoru, the child of a commoner,",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "It was of course quite wrong that Kaoru, the child of a\ncommoner, should be brought up with the Akashi Princess’s children.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Kaoru",
+        "Akashi_Princess"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1475,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER IX",
+        "sentence_index": 154,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0048",
+      "display": "I know no one else at Court to compare with her in this respect.’and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "I know no one else at Court to compare with her in this respect.’",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "I know no one else at Court to\ncompare with her in this respect.’\n\n‘I have always heard,’ said Murasaki, ‘that Lady Oborozuki is\nextremely accomplished and quick-witted.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Murasaki",
+        "Oborozukiyo"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1469,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V2 CHAPTER II",
+        "sentence_index": 241,
+        "half_strategy": "word_midpoint"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0049",
+      "display": "Throughout this time Genji was constantly reminded of his separation from Oborozuki at the timeand indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "Throughout this time Genji was constantly reminded of his separation from Oborozuki at the time",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "Throughout this time Genji was constantly reminded of his separation\nfrom Oborozuki at the time when she became Consort of the Emperor\nSuzaku.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Suzaku",
+        "Old_Emperor",
+        "Oborozukiyo"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1462,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V3 CHAPTER III",
+        "sentence_index": 459,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    },
+    {
+      "id": "gq-0050",
+      "display": "It so happened that Genji was actually at Akikonomu’s palace when the scented bales arrived;and indeed, even they who were aware of the cause were frightened.",
+      "genji_half": "It so happened that Genji was actually at Akikonomu’s palace when the scented bales arrived;",
+      "quijote_half": "and indeed, even they who were aware of the cause were frightened.",
+      "genji_source": "It so happened that Genji was actually at Akikonomu’s palace\nwhen the scented bales arrived; her servants at once showed them to him\nand told him whence they came.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote\nwondering, Sancho Panza trembling, and indeed, even they who were aware\nof the cause were frightened.",
+      "genji_chars": [
+        "Genji",
+        "Akikonomu"
+      ],
+      "quijote_chars": [
+        "Don_Quixote",
+        "Sancho_Panza",
+        "The_Duke",
+        "The_Duchess"
+      ],
+      "score": 1.1459,
+      "mode": "character_encounter",
+      "genji_meta": {
+        "chapter": "V1 CHAPTER XVII",
+        "sentence_index": 8,
+        "half_strategy": "clause_boundary"
+      },
+      "quijote_meta": {
+        "chapter": "V2 CHAPTER XXXIV.",
+        "sentence_index": 23,
+        "half_strategy": "clause_boundary"
+      }
+    }
+  ]
+}
