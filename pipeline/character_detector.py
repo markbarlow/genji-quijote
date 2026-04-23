@@ -45,12 +45,17 @@ def detect_characters(sentence: str, registry: dict) -> list[str]:
         if variants:
             names_to_search.extend(variants)
 
+        # Compile all patterns once before scanning the sentence.
+        # Pre-compilation avoids rebuilding the regex engine state on every name check,
+        # which matters when detect_characters is called for thousands of sentences.
+        compiled = [
+            re.compile(r"\b" + re.escape(name) + r"\b", re.IGNORECASE)
+            for name in names_to_search
+        ]
+
         # Search for any match (canonical or variant) using whole-word boundaries
-        for name in names_to_search:
-            # Use word boundaries (\b) and escape special regex characters.
-            # Case-insensitive flag allows "genji" to match "Genji", etc.
-            pattern = r"\b" + re.escape(name) + r"\b"
-            if re.search(pattern, sentence, re.IGNORECASE):
+        for pattern in compiled:
+            if pattern.search(sentence):
                 # Found a match: add canonical key (with underscores preserved)
                 # and break to avoid duplicates
                 detected.append(canonical_key)
