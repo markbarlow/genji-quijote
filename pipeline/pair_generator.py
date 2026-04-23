@@ -13,7 +13,7 @@ pair scores are comparable across runs with different input data.
 """
 
 import math
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 from pipeline.pair_scorer import score_pair
 
