@@ -11,5 +11,10 @@
   "pair": {
     "character_encounter_bonus": 0.20,
     "character_named_bonus": 0.10
+  },
+  "halving": {
+    "midpoint_window_tokens": 5,
+    "minimum_half_tokens": 4,
+    "boundary_priority": [";", "\u2014", ",", "but", "yet", "though", "when", "while", "and", "for", "nor"]
   }
 }
