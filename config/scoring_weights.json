@@ -1,0 +1,15 @@
+{
+  "sentence": {
+    "length_weight": 0.25,
+    "length_sweet_spot_min": 10,
+    "length_sweet_spot_max": 30,
+    "character_major_score": 0.35,
+    "character_minor_score": 0.20,
+    "place_name_bonus": 0.15,
+    "lexical_diversity_weight": 0.25
+  },
+  "pair": {
+    "character_encounter_bonus": 0.20,
+    "character_named_bonus": 0.10
+  }
+}
