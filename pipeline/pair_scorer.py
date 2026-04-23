@@ -44,7 +44,7 @@ def score_pair(
     genji_chars: list,
     quijote_chars: list,
     pair_weights: dict,
-) -> tuple:
+) -> tuple[float, str]:
     """Score a sentence pair and classify its mode.
 
     Computes the base score as the arithmetic mean of the two sentence scores,

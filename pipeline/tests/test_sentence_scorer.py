@@ -6,7 +6,6 @@ actual weight values from config/scoring_weights.json.
 
 import json
 import pathlib
-import pytest
 
 from pipeline.sentence_scorer import score_sentence
 
@@ -153,18 +152,19 @@ def test_score_capital_word_raises_place_score():
 
 def test_score_first_word_capital_not_counted_as_place():
     """A sentence whose only capital is the first word must NOT trigger the place bonus."""
-    # Only the first word is capitalised; no internal capitals → no place bonus
-    sentence = "She walked to town in the afternoon."
-    # Compute expected score manually: no place bonus contributes
-    # Score should equal sentence_without_place from the previous test
-    score = score_sentence(sentence, [], GENJI_REGISTRY, WEIGHTS)
-
-    # Check it does NOT equal a score that would include the place_name_bonus
-    # by verifying adding PLACE_BONUS to the no-place score would be greater
-    # i.e. we verify that this sentence does not get the bonus
-    score_with_forced_bonus = score + PLACE_BONUS
-    assert score_with_forced_bonus > score, (
-        "Sanity: score without place bonus is less than score + bonus"
+    # First word capital only — should NOT trigger place bonus
+    no_place = score_sentence(
+        "She walked to town in the afternoon today.",
+        [], GENJI_REGISTRY, WEIGHTS
+    )
+    # Internal capital (Kyoto) — SHOULD trigger place bonus
+    with_place = score_sentence(
+        "She walked to Kyoto in the afternoon today.",
+        [], GENJI_REGISTRY, WEIGHTS
+    )
+    place_bonus = PLACE_BONUS
+    assert abs(with_place - no_place - place_bonus) < 1e-9, (
+        "Internal capital should add exactly place_name_bonus; first-word capital should not"
     )
 
 
@@ -204,4 +204,14 @@ def test_score_all_components_combine():
 
     assert score_good > score_bare, (
         f"Full-featured sentence ({score_good:.4f}) should greatly outscore bare sentence ({score_bare:.4f})"
+    )
+
+
+def test_character_score_capped_at_one(weights=WEIGHTS, genji_registry=GENJI_REGISTRY):
+    """Two major characters should not score higher than one, because weights are capped at 1.0."""
+    sentence = "Genji and Murasaki exchanged glances in the autumn garden today."
+    score_two = score_sentence(sentence, ["Genji", "Murasaki"], genji_registry, weights)
+    score_one = score_sentence(sentence, ["Genji"], genji_registry, weights)
+    assert abs(score_two - score_one) < 1e-9, (
+        "Character component should be capped at 1.0; adding a second major char should not change score"
     )

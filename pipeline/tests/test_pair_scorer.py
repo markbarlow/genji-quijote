@@ -6,7 +6,6 @@ from config/scoring_weights.json.
 
 import json
 import pathlib
-import pytest
 
 from pipeline.pair_scorer import score_pair
 
