@@ -1,0 +1,91 @@
+
+------- SECOND ROUND -----
+
+Perhaps too much prevalence of genji ending with a semi-colon? I notice more of that ilk which do not work grammatically
+
+1. Pairs that are clearly broken — grammatically incoherent beyond the intended
+strangeness, or where the join creates something unreadable rather than surreal:
+gq-0006
+gq-0008
+gq-0013
+gq-0022 - the gender swap issue
+gq-0034
+gq-0041
+gq-0042
+gq-0048
+
+
+2. Borderline Pairs, just about make sense, some minor inconsistency which can be overlooked:
+gq-0023 - this has a double and, one at the end of the genji part and one at the start of the quijote part, but is otherwise fine
+gq-0026 - misses a speech mark to close, as the quotation starts in genji. But semantically it works.
+gq-0026 - misses a speech mark to close, as the quotation starts in genji. But semantically it works.
+gq-0037 - misses a speech mark to close, as the quotation starts in genji. But semantically it works.
+
+3. Good ones of note
+gq-0029 another excellent one
+gq-0040 excellent
+gq-0049
+
+
+
+
+------- FIRST ROUND -----
+I did not notice an issue with truncated first halves.
+I have noted issues with the second halves below.
+I did not see a problem with character repetition so far.
+I have created three categories below with examples, from clearly broken to borderline to good examples.
+
+
+1. Pairs that are clearly broken — grammatically incoherent beyond the intended
+strangeness, or where the join creates something unreadable rather than surreal:
+gq-0001
+gq-0004 - the quijote part starts with a quotation which jars especially, I suspect this is a particular case to handle as it is unlikely any quijote quotation will have the right lead in from the Genji sentence part, they will only work if completely self-contained within their part
+gq-0007
+gq-0009 - a quotation / speech mark causing trouble again
+gq-0010 - this would have worked if a longer selection was made from Quijote: "they reached a castle which Don Quixote saw at once was\nthe duke’s, where they had been but a short time before"
+gq-0011 - the switch from singular subject (genji) to plural subject (quijote) is the problem here
+gq-0015 - doesn't make sense
+gq-0016 - doesn't make sense
+gq-0019 - the quotation / speech marks problem
+gq-0020 - the quotation / speech marks problem, nearly works but not quite
+gq-0022  - the quotation / speech marks problem, also nearly works but not quite
+gq-0023  - the quotation / speech marks problem, also nearly works but not quite
+gq-0024 - doesn't make sense
+gq-0025  - the quotation / speech marks problem
+gq-0026 - doesn't quite make sense
+gq-0027  - the quotation / speech marks problem
+gq-0030  - the quotation / speech marks problem
+gq-0034 - doesn't make sense
+gq-0035  - the quotation / speech marks problem
+gq-0037  - the quotation / speech marks problem
+gq-0043  - the quotation / speech marks problem
+gq-0044 - doesn't work grammatically
+gq-0045  - the quotation / speech marks problem
+gq-0046 - the quijote part uses the inner part of a speech thus without speech marks, however the first person singular "I" is a problem and does not match the genji part. "I" is only ever going to appear in spoken words / quotes in Genji at least, and for the most part in Quijote (excluding some rare passages where the author/narrator writes directly to the reader)
+gq-0047  - the quotation / speech marks problem
+gq-0048 - doesn't work grammatically
+
+2. Borderline Pairs, just about make sense, some minor inconsistency which can be overlooked:
+gq-008 - just about makes sense, you can make the leap mentally
+gq-0017 - it almost works except for the gender switch, the princess (genji part) becomes "he" (quijote part)
+gq-0021
+gq-0038
+gq-0049
+
+
+3. Examples that work very well:
+gq-0002 - the semi-colon works well and the fact Quijote moves forwards after someone has fallen, it gels very nicely
+gq-0003
+gq-005 - amusing, while physically it doesn't make sense and the singular subject turns to plural they/them, the idea of a person splitting in two to stand either side of a character has a certain whimsy which fits with Quijote and allows for the grammar to be overlooked (especially as in modern English they/them can be used for a single person)
+gq-0006 - outstanding combination of Genji and Quijote with the latter responding inappropriately (i.e. in character) to what is happening to the former
+gq-0012 -  a delightful character encounter example, love it. This epitomises what this project is about - Genji meets Quijote.
+gq-0014 - a perfectly formed sentence
+gq-0018 - several characters interacting
+gq-0028 - this is a rare example of speech marks working, as both parts have them so it reads like the one bit of speech across the two texts and the grammar has no problems - the split of the texts is seamless.
+gq-0032 - character encounter, enough to pass over potential grammar confusion
+gq-0033 - good sentence consistency, aided by the genji part ending on a semi-colon perhaps and the "he" subject being consistent
+gq-0036 - this is another rare one where quotations work, as it makes sense grammatically and the geni part ends with a comma which works right before the quijote part which is entirely in speech marks
+gq-0039
+gq-0040 - very funny
+gq-0041 - an interesting observation is that the quijote part uses the inner part of a speech / quotation, not the whole of it, so it is not presented as speech marks and in this case the sentence works
+gq-0050  - another where speech marks from quijote actually work both grammatically and semantically as the genji part ends with a semi-colon righ before the quoted words start, and the quoted words pair ok with the genji part

@@ -5,7 +5,12 @@
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(python3 *)",
-      "Bash(tee /tmp/test_output.txt)"
+      "Bash(tee /tmp/test_output.txt)",
+      "Bash(git *)",
+      "Bash(PYTHONPATH=. python3 pipeline/generate_pairs.py --count 50 --output dev_sample.json)",
+      "Bash(node *)",
+      "Bash(curl -s http://localhost:8000/web/index.html)",
+      "Bash(kill %1)"
     ]
   }
 }
