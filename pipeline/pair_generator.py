@@ -225,17 +225,22 @@ def generate_pairs(
     all_pairs.sort(key=lambda t: t[0], reverse=True)
 
     # Step 5 — Greedy selection with Genji uniqueness constraint.
-    # Track which Genji full_sentences have already been used.
+    # Track which full_sentences have already been used on each side.
+    # Both constraints are needed: without Quijote uniqueness the single
+    # highest-scoring Quijote half wins every slot in the output.
     used_genji_sentences: set[str] = set()
+    used_quijote_sentences: set[str] = set()
     selected = []
 
     for pair_score, mode, g, q in all_pairs:
         if len(selected) >= count:
             break
-        # Uniqueness check: each Genji full_sentence may appear in at most one output pair.
         if g.full_sentence in used_genji_sentences:
             continue
+        if q.full_sentence in used_quijote_sentences:
+            continue
         used_genji_sentences.add(g.full_sentence)
+        used_quijote_sentences.add(q.full_sentence)
         selected.append((pair_score, mode, g, q))
 
     # Step 6 — Format selected pairs into the output schema.

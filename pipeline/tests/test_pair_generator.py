@@ -168,14 +168,7 @@ def test_basic_pair_count():
 
 
 def test_genji_uniqueness():
-    """No two pairs share the same Genji full_sentence.
-
-    Constructs a scenario where many genji halves have the same full_sentence
-    (simulating multiple halves from the same sentence, though in practice
-    each sentence generates exactly one half). The uniqueness constraint
-    must still hold.
-    """
-    # Create 10 genji halves that share 5 distinct full_sentences (2 each).
+    """No two pairs share the same Genji full_sentence."""
     genji = []
     for i in range(5):
         for variant in ["a", "b"]:
@@ -188,12 +181,36 @@ def test_genji_uniqueness():
             )
 
     quijote = _make_pool(20, "quijote")
+    result = generate_pairs(genji, quijote, count=10, weights=_ALL_WEIGHTS)
+
+    used = [pair["genji_source"] for pair in result]
+    assert len(used) == len(set(used)), "Genji full_sentences must be unique across output pairs"
+
+
+def test_quijote_uniqueness():
+    """No two pairs share the same Quijote full_sentence.
+
+    Without this constraint the single highest-scoring Quijote half would
+    appear in every output pair, as it maximises (g_score + q_score) / 2
+    for every Genji half.
+    """
+    genji = _make_pool(20, "genji")
+    # All quijote halves share one of 3 full_sentences — ensures constraint is tested.
+    quijote = []
+    for i in range(3):
+        for j in range(7):
+            quijote.append(
+                _make_quijote(
+                    half_text=f"quijote_half_{i}_{j} with more words to fill",
+                    full_sentence=f"shared_quijote_sentence_{i}",
+                    score=float(i * 7 + j),
+                )
+            )
 
     result = generate_pairs(genji, quijote, count=10, weights=_ALL_WEIGHTS)
 
-    # Collect all genji full_sentences used in the result
-    used = [pair["genji_source"] for pair in result]
-    assert len(used) == len(set(used)), "Genji full_sentences must be unique across output pairs"
+    used = [pair["quijote_source"] for pair in result]
+    assert len(used) == len(set(used)), "Quijote full_sentences must be unique across output pairs"
 
 
 def test_output_schema():
