@@ -153,6 +153,44 @@ def _select_top_k(halves: list, count: int) -> list:
 
 
 # ---------------------------------------------------------------------------
+# Conjunction double-up guard
+# ---------------------------------------------------------------------------
+
+# Words that, when appearing at the end of the Genji half AND the start of
+# the Quijote half, create an awkward repeated conjunction ("...and and...").
+_CONJUNCTIONS = {"and", "but", "yet", "or", "nor", "for", "so", "when", "while", "though"}
+
+
+def _has_double_conjunction(genji_half: str, quijote_half: str) -> bool:
+    """Return True if both halves share a conjunction at their join point.
+
+    Detects cases like "...and [Quijote] and..." where the Genji half ends
+    with a conjunction word and the Quijote half also starts with one,
+    producing a grammatically broken double conjunction in the display.
+
+    Parameters
+    ----------
+    genji_half : str
+        The Genji first-half text.
+    quijote_half : str
+        The Quijote second-half text.
+
+    Returns
+    -------
+    bool
+        True if both boundary words are in the conjunction set.
+    """
+    genji_words = genji_half.rstrip().split()
+    quijote_words = quijote_half.lstrip().split()
+    if not genji_words or not quijote_words:
+        return False
+    # Strip trailing punctuation from the last Genji word before comparing.
+    last_genji = genji_words[-1].lower().rstrip(".,;:")
+    first_quijote = quijote_words[0].lower()
+    return last_genji in _CONJUNCTIONS and first_quijote in _CONJUNCTIONS
+
+
+# ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
 
@@ -238,6 +276,10 @@ def generate_pairs(
         if g.full_sentence in used_genji_sentences:
             continue
         if q.full_sentence in used_quijote_sentences:
+            continue
+        # Skip pairs where both halves have a conjunction at the join point
+        # (e.g. "...and" + "and..." produces an incoherent double conjunction).
+        if _has_double_conjunction(g.half_text, q.half_text):
             continue
         used_genji_sentences.add(g.full_sentence)
         used_quijote_sentences.add(q.full_sentence)

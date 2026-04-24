@@ -252,6 +252,26 @@ def test_filter_removes_quijote_sentences_with_first_person(quijote_filter_confi
     assert without_i in result
 
 
+def test_filter_removes_sentences_with_left_single_quote_genji(quijote_filter_config):
+    """Genji sentences containing a left single quote (U+2018 speech mark) are filtered."""
+    # U+2018 is the opening curly single quote used for speech in the source texts.
+    # It is distinct from the apostrophe (U+2019/U+0027) used in contractions.
+    with_speech = "\u2018It is strange,\u2019 he said, gazing at the moon in silence."
+    without_speech = "He gazed at the moon in silence for a long time."
+    # Add the U+2018 pattern to genji config for this test
+    config = {
+        "genji": {
+            "sentence_patterns": ["[\u2018]"],
+            "min_tokens": 8,
+            "max_tokens": 60,
+        },
+        "quijote": quijote_filter_config["quijote"],
+    }
+    result = filter_sentences([with_speech, without_speech], "genji", config)
+    assert with_speech not in result
+    assert without_speech in result
+
+
 def test_filter_quote_pattern_not_applied_to_genji(quijote_filter_config):
     """The quote and first-person filters are quijote-only; genji sentences pass through."""
     with_quotes = 'She said "I cannot go" and remained at the palace through the night.'

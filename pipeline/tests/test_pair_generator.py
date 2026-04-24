@@ -8,7 +8,7 @@ while still exercising the full pairing algorithm.
 import json
 import pathlib
 
-from pipeline.pair_generator import SentenceHalf, generate_pairs
+from pipeline.pair_generator import SentenceHalf, _has_double_conjunction, generate_pairs
 
 
 # ---------------------------------------------------------------------------
@@ -359,6 +359,41 @@ def test_mode_classification():
     # Sanity-check chars are propagated correctly
     assert result[0]["genji_chars"] == ["Genji"]
     assert result[0]["quijote_chars"] == ["Don_Quixote"]
+
+
+def test_double_conjunction_detection():
+    """_has_double_conjunction identifies pairs where both boundary words are conjunctions."""
+    assert _has_double_conjunction("a post was vacant, and", "and compelled him to act") is True
+    assert _has_double_conjunction("a post was vacant, and", "the duke arrived") is False
+    assert _has_double_conjunction("he gazed at the moon;", "and compelled him to act") is False
+    assert _has_double_conjunction("she fell but", "but rose again quickly") is True
+    # Trailing punctuation on the Genji last word should be stripped before comparison
+    assert _has_double_conjunction("she thought, and,", "and compelled him to act") is True
+
+
+def test_double_conjunction_pairs_excluded():
+    """Pairs where both halves have a conjunction at the join point are excluded from output."""
+    # Genji half ends with "and"; Quijote half starts with "and" — should be rejected
+    g = _make_genji(
+        half_text="A post in the office was vacant and",
+        full_sentence="A post in the office was vacant and then something happened.",
+        score=0.9,
+    )
+    q = _make_quijote(
+        half_text="and compelled him to request the duke to give him the island.",
+        full_sentence="She and compelled him to request the duke to give him the island.",
+        score=0.9,
+    )
+    # Provide an alternative Quijote half without conjunction to allow at least one pair
+    q_alt = _make_quijote(
+        half_text="the duchess sent for Sancho to come at once.",
+        full_sentence="Then the duchess sent for Sancho to come at once.",
+        score=0.8,
+    )
+    result = generate_pairs([g], [q, q_alt], count=2, weights=_ALL_WEIGHTS)
+    displays = [p["display"] for p in result]
+    # The double-conjunction pair should not appear
+    assert not any("vacant and and" in d for d in displays)
 
 
 def test_empty_pools():

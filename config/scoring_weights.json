@@ -1,6 +1,6 @@
 {
   "sentence": {
-    "semicolon_half_bonus": 0.10,
+    "semicolon_half_bonus": 0.05,
     "length_weight": 0.25,
     "length_sweet_spot_min": 10,
     "length_sweet_spot_max": 30,
