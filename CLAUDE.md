@@ -9,7 +9,7 @@ Static GitHub Pages web app displaying ~1,021 literary mashup sentences combinin
 - **Every function must have a docstring** explaining what it does, its parameters, and its return value. This is a hard requirement for this project.
 - **Inline comments** should explain non-obvious logic (e.g. why a particular split priority, why a threshold value was chosen).
 - **Word boundaries must always be respected** when splitting strings. Never split mid-word. All sentence halving operates on whitespace-tokenised word lists and reassembles with spaces.
-- No separator is inserted between the Genji and Quixote halves in the `display` field — the halves are joined directly. Colour coding in the UI provides the visual distinction.
+- The Genji and Quijote halves in the `display` field are joined with a single space. Colour coding in the UI provides the visual distinction between them.
 
 ## Project structure
 

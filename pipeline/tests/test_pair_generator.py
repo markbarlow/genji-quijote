@@ -243,8 +243,8 @@ def test_output_schema():
             f"Expected id='gq-{i:04d}', got '{pair['id']}'"
         )
 
-        # display is genji_half + quijote_half with NO separator
-        expected_display = pair["genji_half"] + pair["quijote_half"]
+        # display is genji_half + " " + quijote_half
+        expected_display = pair["genji_half"] + " " + pair["quijote_half"]
         assert pair["display"] == expected_display, (
             f"display does not equal genji_half + quijote_half for pair {i}"
         )

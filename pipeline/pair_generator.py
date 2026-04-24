@@ -249,9 +249,9 @@ def generate_pairs(
         # ID is 1-based and zero-padded to 4 digits.
         pair_id = f"gq-{i:04d}"
 
-        # display is the two halves joined directly — no separator.
+        # display is the two halves joined with a single space.
         # The UI uses colour coding to distinguish Genji from Quijote.
-        display = g.half_text + q.half_text
+        display = g.half_text + " " + q.half_text
 
         output.append({
             "id": pair_id,
