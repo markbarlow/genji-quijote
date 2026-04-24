@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-04-24T09:21:27.673566+00:00",
+    "generated_at": "2026-04-24T09:36:33.779555+00:00",
     "total": 50,
     "window_size": 30
   },
@@ -28,12 +28,12 @@
       "score": 1.2,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER X",
+        "chapter": "VOLUME 3 CHAPTER X",
         "sentence_index": 635,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXIV.",
+        "chapter": "VOLUME 2 CHAPTER XXXIV.",
         "sentence_index": 23,
         "half_strategy": "clause_boundary"
       }
@@ -60,12 +60,12 @@
       "score": 1.1775,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER VI",
+        "chapter": "VOLUME 3 CHAPTER VI",
         "sentence_index": 211,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXVIII.",
+        "chapter": "VOLUME 2 CHAPTER XXXVIII.",
         "sentence_index": 4,
         "half_strategy": "clause_boundary"
       }
@@ -89,12 +89,12 @@
       "score": 1.1694,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER IV",
+        "chapter": "VOLUME 1 CHAPTER IV",
         "sentence_index": 69,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXVI.",
+        "chapter": "VOLUME 2 CHAPTER XXXVI.",
         "sentence_index": 24,
         "half_strategy": "clause_boundary"
       }
@@ -118,12 +118,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER IV",
+        "chapter": "VOLUME 1 CHAPTER IV",
         "sentence_index": 127,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXX.",
+        "chapter": "VOLUME 2 CHAPTER XXX.",
         "sentence_index": 10,
         "half_strategy": "clause_boundary"
       }
@@ -146,12 +146,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER IV",
+        "chapter": "VOLUME 1 CHAPTER IV",
         "sentence_index": 151,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXIV.",
+        "chapter": "VOLUME 2 CHAPTER XXXIV.",
         "sentence_index": 6,
         "half_strategy": "clause_boundary"
       }
@@ -174,12 +174,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER IV",
+        "chapter": "VOLUME 1 CHAPTER IV",
         "sentence_index": 408,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XLIV.",
+        "chapter": "VOLUME 2 CHAPTER XLIV.",
         "sentence_index": 10,
         "half_strategy": "clause_boundary"
       }
@@ -202,12 +202,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER IV",
+        "chapter": "VOLUME 1 CHAPTER IV",
         "sentence_index": 462,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER L.",
+        "chapter": "VOLUME 2 CHAPTER L.",
         "sentence_index": 0,
         "half_strategy": "clause_boundary"
       }
@@ -230,12 +230,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER V",
+        "chapter": "VOLUME 1 CHAPTER V",
         "sentence_index": 370,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LII.",
+        "chapter": "VOLUME 2 CHAPTER LII.",
         "sentence_index": 3,
         "half_strategy": "clause_boundary"
       }
@@ -258,12 +258,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER V",
+        "chapter": "VOLUME 1 CHAPTER V",
         "sentence_index": 507,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LXVI.",
+        "chapter": "VOLUME 2 CHAPTER LXVI.",
         "sentence_index": 18,
         "half_strategy": "clause_boundary"
       }
@@ -286,12 +286,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER V",
+        "chapter": "VOLUME 1 CHAPTER V",
         "sentence_index": 517,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LXVIII.",
+        "chapter": "VOLUME 2 CHAPTER LXVIII.",
         "sentence_index": 36,
         "half_strategy": "word_midpoint"
       }
@@ -315,12 +315,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER V",
+        "chapter": "VOLUME 1 CHAPTER V",
         "sentence_index": 518,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LXIX.",
+        "chapter": "VOLUME 2 CHAPTER LXIX.",
         "sentence_index": 7,
         "half_strategy": "clause_boundary"
       }
@@ -343,12 +343,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER XV",
+        "chapter": "VOLUME 1 CHAPTER XV",
         "sentence_index": 249,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LXX.",
+        "chapter": "VOLUME 2 CHAPTER LXX.",
         "sentence_index": 12,
         "half_strategy": "clause_boundary"
       }
@@ -372,12 +372,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V2 CHAPTER III",
+        "chapter": "VOLUME 2 CHAPTER III",
         "sentence_index": 429,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LXX.",
+        "chapter": "VOLUME 2 CHAPTER LXX.",
         "sentence_index": 13,
         "half_strategy": "clause_boundary"
       }
@@ -400,12 +400,12 @@
       "score": 1.1367,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V2 CHAPTER III",
+        "chapter": "VOLUME 2 CHAPTER III",
         "sentence_index": 431,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LXX.",
+        "chapter": "VOLUME 2 CHAPTER LXX.",
         "sentence_index": 52,
         "half_strategy": "clause_boundary"
       }
@@ -429,12 +429,12 @@
       "score": 1.135,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER IV",
+        "chapter": "VOLUME 3 CHAPTER IV",
         "sentence_index": 0,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V1 CHAPTER XLVII.",
+        "chapter": "VOLUME 1 CHAPTER XLVII.",
         "sentence_index": 36,
         "half_strategy": "word_midpoint"
       }
@@ -457,12 +457,12 @@
       "score": 1.135,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER VII",
+        "chapter": "VOLUME 3 CHAPTER VII",
         "sentence_index": 130,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER I.",
+        "chapter": "VOLUME 2 CHAPTER I.",
         "sentence_index": 66,
         "half_strategy": "clause_boundary"
       }
@@ -487,12 +487,12 @@
       "score": 1.135,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER XII",
+        "chapter": "VOLUME 3 CHAPTER XII",
         "sentence_index": 44,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXVI.",
+        "chapter": "VOLUME 2 CHAPTER XXXVI.",
         "sentence_index": 0,
         "half_strategy": "word_midpoint"
       }
@@ -516,12 +516,12 @@
       "score": 1.1277,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER V",
+        "chapter": "VOLUME 3 CHAPTER V",
         "sentence_index": 142,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXIX.",
+        "chapter": "VOLUME 2 CHAPTER XXXIX.",
         "sentence_index": 0,
         "half_strategy": "clause_boundary"
       }
@@ -544,12 +544,12 @@
       "score": 1.1246,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V2 CHAPTER III",
+        "chapter": "VOLUME 2 CHAPTER III",
         "sentence_index": 472,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XLVIII.",
+        "chapter": "VOLUME 2 CHAPTER XLVIII.",
         "sentence_index": 37,
         "half_strategy": "clause_boundary"
       }
@@ -572,12 +572,12 @@
       "score": 1.1229,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER IX",
+        "chapter": "VOLUME 3 CHAPTER IX",
         "sentence_index": 132,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXVI.",
+        "chapter": "VOLUME 2 CHAPTER XXVI.",
         "sentence_index": 21,
         "half_strategy": "clause_boundary"
       }
@@ -602,12 +602,12 @@
       "score": 1.1223,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER X",
+        "chapter": "VOLUME 3 CHAPTER X",
         "sentence_index": 628,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXVII.",
+        "chapter": "VOLUME 2 CHAPTER XXVII.",
         "sentence_index": 5,
         "half_strategy": "clause_boundary"
       }
@@ -631,12 +631,12 @@
       "score": 1.1069,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER X",
+        "chapter": "VOLUME 1 CHAPTER X",
         "sentence_index": 400,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXIV.",
+        "chapter": "VOLUME 2 CHAPTER XXXIV.",
         "sentence_index": 16,
         "half_strategy": "clause_boundary"
       }
@@ -660,12 +660,12 @@
       "score": 1.1069,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER VI",
+        "chapter": "VOLUME 3 CHAPTER VI",
         "sentence_index": 7,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XLII.",
+        "chapter": "VOLUME 2 CHAPTER XLII.",
         "sentence_index": 3,
         "half_strategy": "clause_boundary"
       }
@@ -688,12 +688,12 @@
       "score": 1.1044,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER III",
+        "chapter": "VOLUME 1 CHAPTER III",
         "sentence_index": 72,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XLV.",
+        "chapter": "VOLUME 2 CHAPTER XLV.",
         "sentence_index": 3,
         "half_strategy": "clause_boundary"
       }
@@ -716,12 +716,12 @@
       "score": 1.1044,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER XIV",
+        "chapter": "VOLUME 1 CHAPTER XIV",
         "sentence_index": 439,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LIII.",
+        "chapter": "VOLUME 2 CHAPTER LIII.",
         "sentence_index": 28,
         "half_strategy": "clause_boundary"
       }
@@ -745,12 +745,12 @@
       "score": 1.1037,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER XIV",
+        "chapter": "VOLUME 1 CHAPTER XIV",
         "sentence_index": 444,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXI.",
+        "chapter": "VOLUME 2 CHAPTER XXXI.",
         "sentence_index": 16,
         "half_strategy": "clause_boundary"
       }
@@ -773,12 +773,12 @@
       "score": 1.1027,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER XVII",
+        "chapter": "VOLUME 1 CHAPTER XVII",
         "sentence_index": 184,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V1 CHAPTER XXVI.",
+        "chapter": "VOLUME 1 CHAPTER XXVI.",
         "sentence_index": 30,
         "half_strategy": "clause_boundary"
       }
@@ -802,12 +802,12 @@
       "score": 1.1027,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V2 CHAPTER II",
+        "chapter": "VOLUME 2 CHAPTER II",
         "sentence_index": 215,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V1 CHAPTER XLVII.",
+        "chapter": "VOLUME 1 CHAPTER XLVII.",
         "sentence_index": 29,
         "half_strategy": "clause_boundary"
       }
@@ -830,12 +830,12 @@
       "score": 1.1027,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V2 CHAPTER III",
+        "chapter": "VOLUME 2 CHAPTER III",
         "sentence_index": 131,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXX.",
+        "chapter": "VOLUME 2 CHAPTER XXX.",
         "sentence_index": 14,
         "half_strategy": "clause_boundary"
       }
@@ -859,12 +859,12 @@
       "score": 1.1027,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER III",
+        "chapter": "VOLUME 3 CHAPTER III",
         "sentence_index": 360,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXII.",
+        "chapter": "VOLUME 2 CHAPTER XXXII.",
         "sentence_index": 21,
         "half_strategy": "clause_boundary"
       }
@@ -888,12 +888,12 @@
       "score": 1.1027,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER X",
+        "chapter": "VOLUME 3 CHAPTER X",
         "sentence_index": 616,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXIII.",
+        "chapter": "VOLUME 2 CHAPTER XXXIII.",
         "sentence_index": 17,
         "half_strategy": "clause_boundary"
       }
@@ -916,12 +916,12 @@
       "score": 1.1027,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER XI",
+        "chapter": "VOLUME 3 CHAPTER XI",
         "sentence_index": 137,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXIII.",
+        "chapter": "VOLUME 2 CHAPTER XXXIII.",
         "sentence_index": 20,
         "half_strategy": "word_midpoint"
       }
@@ -945,12 +945,12 @@
       "score": 1.1023,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER X",
+        "chapter": "VOLUME 3 CHAPTER X",
         "sentence_index": 115,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LII.",
+        "chapter": "VOLUME 2 CHAPTER LII.",
         "sentence_index": 33,
         "half_strategy": "clause_boundary"
       }
@@ -973,12 +973,12 @@
       "score": 1.0994,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER VII",
+        "chapter": "VOLUME 1 CHAPTER VII",
         "sentence_index": 79,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LXX.",
+        "chapter": "VOLUME 2 CHAPTER LXX.",
         "sentence_index": 47,
         "half_strategy": "word_midpoint"
       }
@@ -1001,12 +1001,12 @@
       "score": 1.0977,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER X",
+        "chapter": "VOLUME 1 CHAPTER X",
         "sentence_index": 472,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V1 CHAPTER LII.",
+        "chapter": "VOLUME 1 CHAPTER LII.",
         "sentence_index": 30,
         "half_strategy": "clause_boundary"
       }
@@ -1029,12 +1029,12 @@
       "score": 1.0977,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER XII",
+        "chapter": "VOLUME 1 CHAPTER XII",
         "sentence_index": 108,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER L.",
+        "chapter": "VOLUME 2 CHAPTER L.",
         "sentence_index": 4,
         "half_strategy": "clause_boundary"
       }
@@ -1057,12 +1057,12 @@
       "score": 1.0956,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER XIV",
+        "chapter": "VOLUME 1 CHAPTER XIV",
         "sentence_index": 235,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXV.",
+        "chapter": "VOLUME 2 CHAPTER XXXV.",
         "sentence_index": 38,
         "half_strategy": "clause_boundary"
       }
@@ -1086,12 +1086,12 @@
       "score": 1.0946,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V2 CHAPTER VIII",
+        "chapter": "VOLUME 2 CHAPTER VIII",
         "sentence_index": 196,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXV.",
+        "chapter": "VOLUME 2 CHAPTER XXV.",
         "sentence_index": 49,
         "half_strategy": "clause_boundary"
       }
@@ -1116,12 +1116,12 @@
       "score": 1.0944,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER I",
+        "chapter": "VOLUME 3 CHAPTER I",
         "sentence_index": 212,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER L.",
+        "chapter": "VOLUME 2 CHAPTER L.",
         "sentence_index": 16,
         "half_strategy": "clause_boundary"
       }
@@ -1145,12 +1145,12 @@
       "score": 1.0932,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER II",
+        "chapter": "VOLUME 3 CHAPTER II",
         "sentence_index": 49,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXII.",
+        "chapter": "VOLUME 2 CHAPTER XXXII.",
         "sentence_index": 22,
         "half_strategy": "clause_boundary"
       }
@@ -1173,12 +1173,12 @@
       "score": 1.0929,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER II",
+        "chapter": "VOLUME 3 CHAPTER II",
         "sentence_index": 59,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXIII.",
+        "chapter": "VOLUME 2 CHAPTER XXXIII.",
         "sentence_index": 10,
         "half_strategy": "clause_boundary"
       }
@@ -1201,12 +1201,12 @@
       "score": 1.0919,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER III",
+        "chapter": "VOLUME 3 CHAPTER III",
         "sentence_index": 0,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER V.",
+        "chapter": "VOLUME 2 CHAPTER V.",
         "sentence_index": 1,
         "half_strategy": "word_midpoint"
       }
@@ -1229,12 +1229,12 @@
       "score": 1.0906,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER III",
+        "chapter": "VOLUME 3 CHAPTER III",
         "sentence_index": 55,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXI.",
+        "chapter": "VOLUME 2 CHAPTER XXXI.",
         "sentence_index": 27,
         "half_strategy": "clause_boundary"
       }
@@ -1257,12 +1257,12 @@
       "score": 1.0906,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER III",
+        "chapter": "VOLUME 3 CHAPTER III",
         "sentence_index": 486,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXII.",
+        "chapter": "VOLUME 2 CHAPTER XXXII.",
         "sentence_index": 54,
         "half_strategy": "word_midpoint"
       }
@@ -1285,12 +1285,12 @@
       "score": 1.089,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER X",
+        "chapter": "VOLUME 3 CHAPTER X",
         "sentence_index": 360,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXV.",
+        "chapter": "VOLUME 2 CHAPTER XXXV.",
         "sentence_index": 26,
         "half_strategy": "clause_boundary"
       }
@@ -1313,12 +1313,12 @@
       "score": 1.0872,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER IV",
+        "chapter": "VOLUME 3 CHAPTER IV",
         "sentence_index": 50,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V1 CHAPTER XLVII.",
+        "chapter": "VOLUME 1 CHAPTER XLVII.",
         "sentence_index": 12,
         "half_strategy": "clause_boundary"
       }
@@ -1341,12 +1341,12 @@
       "score": 1.0865,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER IX",
+        "chapter": "VOLUME 3 CHAPTER IX",
         "sentence_index": 154,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER LXXIII.",
+        "chapter": "VOLUME 2 CHAPTER LXXIII.",
         "sentence_index": 14,
         "half_strategy": "word_midpoint"
       }
@@ -1369,12 +1369,12 @@
       "score": 1.0844,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V2 CHAPTER II",
+        "chapter": "VOLUME 2 CHAPTER II",
         "sentence_index": 241,
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "V1 CHAPTER XLVII.",
+        "chapter": "VOLUME 1 CHAPTER XLVII.",
         "sentence_index": 9,
         "half_strategy": "clause_boundary"
       }
@@ -1401,12 +1401,12 @@
       "score": 1.0825,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V3 CHAPTER III",
+        "chapter": "VOLUME 3 CHAPTER III",
         "sentence_index": 459,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XXXV.",
+        "chapter": "VOLUME 2 CHAPTER XXXV.",
         "sentence_index": 49,
         "half_strategy": "clause_boundary"
       }
@@ -1429,12 +1429,12 @@
       "score": 1.082,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "V1 CHAPTER XVII",
+        "chapter": "VOLUME 1 CHAPTER XVII",
         "sentence_index": 8,
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "V2 CHAPTER XL.",
+        "chapter": "VOLUME 2 CHAPTER XL.",
         "sentence_index": 29,
         "half_strategy": "clause_boundary"
       }

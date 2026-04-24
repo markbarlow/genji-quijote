@@ -228,8 +228,8 @@ def test_tag_chapter_headings_quijote_unique_labels_across_volumes():
     labels = [label for label, _ in chapters]
     assert len(labels) == len(set(labels)), "Duplicate labels found: " + str(labels)
     # Volume prefix must be present because the same numeral repeats
-    assert any("V1" in lbl for lbl in labels)
-    assert any("V2" in lbl for lbl in labels)
+    assert any("VOLUME 1" in lbl for lbl in labels)
+    assert any("VOLUME 2" in lbl for lbl in labels)
 
 
 def test_tag_chapter_headings_invalid_source():

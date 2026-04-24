@@ -197,7 +197,7 @@ def tag_chapter_headings(text: str, source: str) -> list[tuple[str, str]]:
                 volume += 1
                 current_volume_seen = set()
             current_volume_seen.add(lbl)
-            unique_labels.append(f"V{volume} {lbl}")
+            unique_labels.append(f"VOLUME {volume} {lbl}")
         heading_indices = [(idx, unique_labels[i]) for i, (idx, _) in enumerate(heading_indices)]
 
     for pos, (heading_line_idx, label) in enumerate(heading_indices):
