@@ -233,8 +233,8 @@
     async function init() {
       let data;
       try {
-        // sentences.json lives at the repo root, one level above web/.
-        const response = await fetch('../sentences.json');
+        // Load dev_sample.json for local testing; switch to sentences.json for production.
+        const response = await fetch('../dev_sample.json');
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
