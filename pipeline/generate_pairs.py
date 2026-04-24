@@ -31,7 +31,7 @@ from pipeline.character_detector import detect_characters
 from pipeline.pair_generator import SentenceHalf, generate_pairs
 from pipeline.sentence_filter import filter_sentences
 from pipeline.sentence_halver import halve_sentence
-from pipeline.sentence_scorer import score_sentence
+from pipeline.sentence_scorer import half_boundary_bonus, score_sentence
 from pipeline.sentence_splitter import split_sentences
 from pipeline.text_cleaner import (
     remove_footnote_definitions,
@@ -191,6 +191,11 @@ def _process_source(
 
             # Score the full sentence — normalisation happens later across the pool.
             raw_score = score_sentence(sentence, detected_chars, character_registry, sentence_weights)
+
+            # For Genji first halves, apply a bonus when the half ends at a
+            # semicolon — these splits produce cleaner joins with the Quijote half.
+            if position == "first":
+                raw_score += half_boundary_bonus(half_text, sentence_weights)
 
             halves.append(
                 SentenceHalf(

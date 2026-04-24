@@ -7,7 +7,7 @@ actual weight values from config/scoring_weights.json.
 import json
 import pathlib
 
-from pipeline.sentence_scorer import score_sentence
+from pipeline.sentence_scorer import half_boundary_bonus, score_sentence
 
 
 # ---------------------------------------------------------------------------
@@ -215,3 +215,18 @@ def test_character_score_capped_at_one(weights=WEIGHTS, genji_registry=GENJI_REG
     assert abs(score_two - score_one) < 1e-9, (
         "Character component should be capped at 1.0; adding a second major char should not change score"
     )
+
+
+def test_half_boundary_bonus_semicolon():
+    """half_boundary_bonus returns the configured bonus for a semicolon-terminated half."""
+    expected = WEIGHTS["semicolon_half_bonus"]
+    assert half_boundary_bonus("Genji gazed at the moon;", WEIGHTS) == expected
+    # Trailing whitespace should not prevent detection
+    assert half_boundary_bonus("Genji gazed at the moon;  ", WEIGHTS) == expected
+
+
+def test_half_boundary_bonus_no_semicolon():
+    """half_boundary_bonus returns 0.0 when the half does not end with a semicolon."""
+    assert half_boundary_bonus("Genji gazed at the moon,", WEIGHTS) == 0.0
+    assert half_boundary_bonus("Genji gazed at the moon.", WEIGHTS) == 0.0
+    assert half_boundary_bonus("Genji gazed at the moon", WEIGHTS) == 0.0

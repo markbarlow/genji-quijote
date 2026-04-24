@@ -187,6 +187,31 @@ def _lexical_diversity_score(sentence: str, weights: dict) -> float:
     return ttr * weights["lexical_diversity_weight"]
 
 
+def half_boundary_bonus(half_text: str, weights: dict) -> float:
+    """Return a bonus when a sentence half ends at a semicolon boundary.
+
+    Semicolon-terminated Genji first halves consistently produce more
+    natural-reading mashup pairs: the strong clause break gives the
+    Quijote second half a clean entry point. Returns semicolon_half_bonus
+    from weights if the half ends with ";", else 0.0.
+
+    Parameters
+    ----------
+    half_text : str
+        The displayed half-sentence text (after halving).
+    weights : dict
+        The "sentence" section of scoring_weights.json.
+
+    Returns
+    -------
+    float
+        The semicolon_half_bonus value, or 0.0.
+    """
+    if half_text.rstrip().endswith(";"):
+        return weights.get("semicolon_half_bonus", 0.0)
+    return 0.0
+
+
 def score_sentence(
     sentence: str,
     detected_chars: list,

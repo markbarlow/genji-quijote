@@ -202,3 +202,58 @@ def test_filter_all_caps_requires_multiple_words(minimal_config):
         ["I have walked many miles across the plains today."], "genji", minimal_config
     )
     assert "I have walked many miles across the plains today." in result_with_long
+
+
+@pytest.fixture
+def quijote_filter_config():
+    """Config with the real quijote sentence_patterns (quotes and first-person I)."""
+    return {
+        "genji": {
+            "sentence_patterns": [],
+            "min_tokens": 8,
+            "max_tokens": 60,
+        },
+        "quijote": {
+            "sentence_patterns": [
+                '["\\u201c\\u201d]',
+                "\\bI\\b",
+            ],
+            "latin_pattern": "",
+            "min_tokens": 8,
+            "max_tokens": 60,
+        },
+    }
+
+
+def test_filter_removes_quijote_sentences_with_straight_quotes(quijote_filter_config):
+    """Quijote sentences containing straight double quotes are filtered out."""
+    with_quotes = 'He said "saddle my horse" and went to the stable at dawn.'
+    without_quotes = "He said to saddle his horse and went to the stable at dawn."
+    result = filter_sentences([with_quotes, without_quotes], "quijote", quijote_filter_config)
+    assert with_quotes not in result
+    assert without_quotes in result
+
+
+def test_filter_removes_quijote_sentences_with_curly_quotes(quijote_filter_config):
+    """Quijote sentences containing curly double quotes are filtered out."""
+    with_curly = "\u201cSaddle my horse at once,\u201d said Don Quixote to his squire Sancho."
+    without_quotes = "Don Quixote ordered his squire Sancho to saddle his horse at once."
+    result = filter_sentences([with_curly, without_quotes], "quijote", quijote_filter_config)
+    assert with_curly not in result
+    assert without_quotes in result
+
+
+def test_filter_removes_quijote_sentences_with_first_person(quijote_filter_config):
+    """Quijote sentences containing standalone 'I' are filtered (dialogue/narration clash)."""
+    with_i = "I will tell you the truth about what happened on that very day."
+    without_i = "He told the truth about what happened on that very day."
+    result = filter_sentences([with_i, without_i], "quijote", quijote_filter_config)
+    assert with_i not in result
+    assert without_i in result
+
+
+def test_filter_quote_pattern_not_applied_to_genji(quijote_filter_config):
+    """The quote and first-person filters are quijote-only; genji sentences pass through."""
+    with_quotes = 'She said "I cannot go" and remained at the palace through the night.'
+    result = filter_sentences([with_quotes], "genji", quijote_filter_config)
+    assert with_quotes in result

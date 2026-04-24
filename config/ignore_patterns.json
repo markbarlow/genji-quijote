@@ -5,7 +5,10 @@
     "max_tokens": 60
   },
   "quijote": {
-    "sentence_patterns": [],
+    "sentence_patterns": [
+      "[\"\\u201c\\u201d]",
+      "\\bI\\b"
+    ],
     "latin_pattern": "\\b(est|sunt|erat|ergo|nunc|enim|igitur|quod|sed|etiam)\\b",
     "min_tokens": 8,
     "max_tokens": 60
