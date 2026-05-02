@@ -1,7 +1,7 @@
 
 ------- SECOND ROUND -----
 
-Perhaps too much prevalence of genji ending with a semi-colon? I notice more of that ilk which do not work grammatically
+Overall: I think there's too much prevalence of the genji part ending with a semi-colon, we should keep some weighting for that but less than was used to generate this set. I notice more examples of that ilk which do not work grammatically
 
 1. Pairs that are clearly broken — grammatically incoherent beyond the intended
 strangeness, or where the join creates something unreadable rather than surreal:

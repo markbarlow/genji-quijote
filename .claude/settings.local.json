@@ -10,7 +10,15 @@
       "Bash(PYTHONPATH=. python3 pipeline/generate_pairs.py --count 50 --output dev_sample.json)",
       "Bash(node *)",
       "Bash(curl -s http://localhost:8000/web/index.html)",
-      "Bash(kill %1)"
+      "Bash(kill %1)",
+      "WebFetch(domain:api.anthropic.com)",
+      "Read(//private/tmp/genji-design/**)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/web/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/web/data/pairs.json)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/web/app.jsx)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/web/audio/manifest.json)",
+      "Bash(curl -s http://localhost:8000/web/audio/manifest.json)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:8000/web/audio/mulberry-harbour-roads.mp3\")"
     ]
   }
 }

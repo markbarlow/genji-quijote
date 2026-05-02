@@ -4,275 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Shining Prince Meets The Knight Errant</title>
+
+  <!-- Description (used by some search engines + as OG fallback) -->
+  <meta name="description" content="A sentence of Genji meets a sentence of Quijote. Around a thousand pairs, generated from the openly-available texts on Project Gutenberg." />
+
+  <!-- Favicon — two meeting circles, moss-green Genji + terracotta Quijote -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Open Graph (for iMessage, Slack, Discord, Bluesky, Facebook, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Shining Prince Meets The Knight Errant" />
+  <meta property="og:description" content="A sentence of Genji meets a sentence of Quijote." />
+  <meta property="og:image" content="og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter / X card — uses the same image with a richer layout -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Shining Prince Meets The Knight Errant" />
+  <meta name="twitter:description" content="A sentence of Genji meets a sentence of Quijote." />
+  <meta name="twitter:image" content="og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
   <style>
-    /* Bare-minimum dev-stub styles — not the final design. */
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #13140f; overflow-x: hidden; }
     body {
-      font-family: Georgia, 'Times New Roman', serif;
-      max-width: 720px;
-      margin: 4rem auto;
-      padding: 0 1.5rem;
-      line-height: 1.7;
-      color: #1a1a1a;
-      background: #fafaf8;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      -webkit-text-size-adjust: 100%;
+      overscroll-behavior: none;
     }
 
-    h1 {
-      font-size: 1.1rem;
-      font-weight: normal;
-      letter-spacing: 0.05em;
-      color: #555;
-      margin-bottom: 2.5rem;
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-24px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes slideInRight {
+      from { opacity: 0; transform: translateX(24px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes deplete {
+      from { transform: scaleX(1); }
+      to   { transform: scaleX(0); }
     }
 
-    #loading {
-      color: #888;
-      font-style: italic;
-    }
-
-    #main {
-      display: none; /* hidden until data loads */
-    }
-
-    #display-text {
-      font-size: 1.25rem;
-      margin: 0 0 2rem;
-    }
-
-    #meta {
-      font-size: 0.8rem;
-      color: #777;
-      margin-bottom: 2rem;
-      font-family: 'Courier New', monospace;
-    }
-
-    #controls {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-
-    button {
-      padding: 0.4rem 1rem;
-      font-size: 0.9rem;
-      cursor: pointer;
-      border: 1px solid #aaa;
-      background: #fff;
-      border-radius: 3px;
-    }
-
-    button:hover:not(:disabled) {
-      background: #f0f0ec;
-    }
-
-    button:disabled {
-      opacity: 0.4;
-      cursor: default;
-    }
-
-    #btn-play-pause {
-      font-weight: bold;
-    }
+    a:hover { color: #e8c890 !important; }
+    button:focus-visible { outline: 1px solid #8a857a; outline-offset: 2px; }
   </style>
 </head>
 <body>
-  <h1>The Shining Prince Meets The Knight Errant</h1>
+  <div id="root"></div>
 
-  <p id="loading">Loading sentences&hellip;</p>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
-  <div id="main">
-    <p id="display-text"></p>
-    <p id="meta"></p>
-    <div id="controls">
-      <button id="btn-prev">&#8592; Prev</button>
-      <button id="btn-next">Next &#8594;</button>
-      <button id="btn-play-pause">&#9654; Play</button>
-    </div>
-  </div>
+  <script type="text/babel" src="app.jsx"></script>
 
-  <script type="module">
-    import { createQueue } from './queue.js';
-    import { createPlayer } from './player.js';
-    import { bindKeys } from './keyboard.js';
-
-    // -------------------------------------------------------------------------
-    // State
-    // -------------------------------------------------------------------------
-
-    let queue = null;
-    let player = null;
-    // Track whether the player is in "playing" mode independently of the timer,
-    // so the UI can reflect intent even between pairs.
-    let playing = false;
-
-    // -------------------------------------------------------------------------
-    // DOM references
-    // -------------------------------------------------------------------------
-
-    const loadingEl = document.getElementById('loading');
-    const mainEl = document.getElementById('main');
-    const displayTextEl = document.getElementById('display-text');
-    const metaEl = document.getElementById('meta');
-    const btnPrev = document.getElementById('btn-prev');
-    const btnNext = document.getElementById('btn-next');
-    const btnPlayPause = document.getElementById('btn-play-pause');
-
-    // -------------------------------------------------------------------------
-    // Rendering
-    // -------------------------------------------------------------------------
-
-    /**
-     * Renders the current pair to the DOM and updates button states.
-     *
-     * @param {Object} pair - The pair object from sentences.json.
-     * @returns {void}
-     */
-    function render(pair) {
-      displayTextEl.textContent = pair.display;
-
-      // Build a compact metadata line from the pair's fields.
-      const genjiChapter = pair.genji_meta?.chapter ?? '?';
-      const quijoteChapter = pair.quijote_meta?.chapter ?? '?';
-      metaEl.textContent =
-        `#${pair.id} · mode: ${pair.mode} · Genji ch. ${genjiChapter} · Quixote ch. ${quijoteChapter}`;
-
-      // Prev is only active when there is history to go back to.
-      btnPrev.disabled = !queue.hasPrev();
-
-      // Reflect current play/pause state in the button label.
-      btnPlayPause.textContent = playing ? '⏸ Pause' : '▶ Play';
-    }
-
-    // -------------------------------------------------------------------------
-    // Player auto-advance callback
-    // -------------------------------------------------------------------------
-
-    /**
-     * Called by the player when the timer fires. Advances the queue to the
-     * next pair, re-renders, and restarts the player for the new pair if
-     * playback is still active.
-     *
-     * @returns {void}
-     */
-    function onAdvance() {
-      const pair = queue.next();
-      render(pair);
-      if (playing) {
-        // Word count drives the per-pair reading duration.
-        player.start(pair.display.split(' ').length);
-      }
-    }
-
-    // -------------------------------------------------------------------------
-    // Control handlers
-    // -------------------------------------------------------------------------
-
-    /**
-     * Navigates to the next pair. Stops any running timer and resets the
-     * playing state (manual navigation interrupts auto-play).
-     *
-     * @returns {void}
-     */
-    function handleNext() {
-      // Manual skip — pause auto-play so the user stays in control.
-      if (playing) {
-        playing = false;
-        player.stop();
-      }
-      const pair = queue.next();
-      render(pair);
-    }
-
-    /**
-     * Navigates to the previous pair in history, if available.
-     *
-     * @returns {void}
-     */
-    function handlePrev() {
-      if (!queue.hasPrev()) return;
-      // Manual navigation — pause auto-play.
-      if (playing) {
-        playing = false;
-        player.stop();
-      }
-      const pair = queue.prev();
-      render(pair);
-    }
-
-    /**
-     * Toggles the player between playing and paused states.
-     *
-     * @returns {void}
-     */
-    function handleTogglePlay() {
-      if (playing) {
-        // Pause: cancel the current timer and update state.
-        playing = false;
-        player.stop();
-        btnPlayPause.textContent = '▶ Play';
-      } else {
-        // Play: start the timer for the currently displayed pair.
-        playing = true;
-        const pair = queue.current();
-        if (pair) {
-          player.start(pair.display.split(' ').length);
-        }
-        btnPlayPause.textContent = '⏸ Pause';
-      }
-    }
-
-    // -------------------------------------------------------------------------
-    // Initialisation
-    // -------------------------------------------------------------------------
-
-    /**
-     * Fetches sentences.json, wires up the queue, player, and keyboard
-     * bindings, then displays the first pair.
-     *
-     * @returns {Promise<void>}
-     */
-    async function init() {
-      let data;
-      try {
-        // Load dev_sample.json for local testing; switch to sentences.json for production.
-        const response = await fetch('../dev_sample.json');
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-        data = await response.json();
-      } catch (err) {
-        loadingEl.textContent = `Failed to load sentences.json: ${err.message}`;
-        return;
-      }
-
-      const { pairs, meta } = data;
-      const windowSize = meta?.window_size ?? 30;
-
-      queue = createQueue(pairs, windowSize);
-      // onAdvance handles queue.next() + re-render + player restart.
-      player = createPlayer(onAdvance);
-
-      // Wire up button click handlers.
-      btnNext.addEventListener('click', handleNext);
-      btnPrev.addEventListener('click', handlePrev);
-      btnPlayPause.addEventListener('click', handleTogglePlay);
-
-      // Wire up keyboard shortcuts; cleanup is available if we ever need to
-      // unmount (not needed for a single-page stub but good practice).
-      bindKeys({
-        onNext: handleNext,
-        onPrev: handlePrev,
-        onTogglePlay: handleTogglePlay,
-      });
-
-      // Show the main UI and draw the first pair.
-      loadingEl.style.display = 'none';
-      mainEl.style.display = 'block';
-
-      const firstPair = queue.next();
-      render(firstPair);
-    }
-
-    init();
+  <script type="text/babel">
+    (async () => {
+      const resp = await fetch('./data/pairs.json');
+      const data = await resp.json();
+      window.BOOT_APP(data);
+    })();
   </script>
 </body>
 </html>

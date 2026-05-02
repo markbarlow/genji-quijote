@@ -1,0 +1,20 @@
+{
+  "_comment": "Drop your .mp3 files into this audio/ folder and list them here. Order doesn't matter — the app shuffles on load. Paths are relative to index.html.",
+  "tracks": [
+    "audio/mulberry-harbour-across-the-sea.mp3",
+    "audio/mulberry-harbour-electric-candle-machine.mp3",
+    "audio/mulberry-harbour-exit-pheidippides.mp3",
+    "audio/mulberry-harbour-hinterland-3.mp3",
+    "audio/mulberry-harbour-kairos.mp3",
+    "audio/mulberry-harbour-persepolis.mp3",
+    "audio/mulberry-harbour-roads.mp3",
+    "audio/mulberry-harbour-small-pleasures.mp3",
+    "audio/mulberry-harbour-the-drift.mp3",
+    "audio/mulberry-harbour-the-tinker.mp3",
+    "audio/mulberry-harbour-the-tunnel.mp3",
+    "audio/mulberry-harbour-the-water-boatman.mp3",
+    "audio/mulberry-harbour-the-whetstone.mp3",
+    "audio/mulberry-harbour-weaver.mp3",
+    "audio/mulberry-harbour-wisp.mp3"
+  ]
+}
