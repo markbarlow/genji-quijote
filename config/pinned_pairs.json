@@ -1,0 +1,181 @@
+{
+  "_comment": "Pairs included in every generation run regardless of score. Matched by exact genji_half + quijote_half text. Review and edit before running generate_pairs.py — remove any you don't want to keep, or add others from dev_sample.json.",
+  "pairs": [
+    {
+      "genji_half": "It should be explained that during the period when Tō no Chūjō kept Yūgiri away from Kumoi,",
+      "quijote_half": "even they who were aware of the cause were frightened.",
+      "genji_source": "It should be explained that during the period when Tō no Chūjō kept Yūgiri away from Kumoi, he had carried on a secret affair with this daughter of Koremitsu.",
+      "quijote_source": "The duke was astounded, the duchess amazed, Don Quixote wondering, Sancho Panza trembling, and indeed, even they who were aware of the cause were frightened.",
+      "genji_chapter": "VOLUME 3 CHAPTER X",
+      "quijote_chapter": "VOLUME 2 CHAPTER XXXIV."
+    },
+    {
+      "genji_half": "For example, her stepmother had even held her responsible for Makibashira's fall;",
+      "quijote_half": "and Don Quixote went some twelve paces forward to meet her.",
+      "genji_source": "For example, her stepmother had even held her responsible for Makibashira’s fall; it was Murasaki’s jealousy (so this woman asserted) that had forced Genji to plant Tamakatsura in Higekuro’s way!",
+      "quijote_source": "On seeing this the duke, the duchess, and Don Quixote went some twelve paces forward to meet her.",
+      "genji_chapter": "VOLUME 3 CHAPTER VI",
+      "quijote_chapter": "VOLUME 2 CHAPTER XXXVIII."
+    },
+    {
+      "genji_half": "The Akashi Princess was now back at the Imperial Palace;",
+      "quijote_half": "and the duchess showed Sancho's letter to the duke, who was highly delighted with it.",
+      "genji_source": "The Akashi Princess was now back at the Imperial Palace; but Genji persuaded her to let Prince Niou stay with him for a while.",
+      "quijote_source": "With this they betook themselves to a garden where they were to dine, and the duchess showed Sancho’s letter to the duke, who was highly delighted with it.",
+      "genji_chapter": "VOLUME 3 CHAPTER XII",
+      "quijote_chapter": "VOLUME 2 CHAPTER XXXVI."
+    },
+    {
+      "genji_half": "Koremitsu accordingly sent one of the lesser attendants to the house,",
+      "quijote_half": "and made them a profound obeisance, which they returned by bowing their heads slightly.",
+      "genji_source": "Koremitsu accordingly sent one of the lesser attendants to the house, instructing him to give the impression that Genji had come on purpose to enquire.",
+      "quijote_source": "As the duke and duchess mounted the stage Don Quixote and Sancho rose and made them a profound obeisance, which they returned by bowing their heads slightly.",
+      "genji_chapter": "VOLUME 1 CHAPTER V",
+      "quijote_chapter": "VOLUME 2 CHAPTER LXIX."
+    },
+    {
+      "genji_half": "Having delivered this message Koremitsu brought in some of Genji's servants",
+      "quijote_half": "and went home to his village to wait there for Don Quixote, who was coming after him.",
+      "genji_source": "Having delivered this message Koremitsu brought in some of Genji’s servants whom he had sent to mount guard over the house that night.",
+      "quijote_source": "And so he took his leave of the duke, and went home to his village to wait there for Don Quixote, who was coming after him.",
+      "genji_chapter": "VOLUME 1 CHAPTER V",
+      "quijote_chapter": "VOLUME 2 CHAPTER LXX."
+    },
+    {
+      "genji_half": "Nor was she far wrong,",
+      "quijote_half": "so much did he enjoy everything connected with Sancho and Don Quixote.",
+      "genji_source": "Nor was she far wrong, for Koremitsu was indeed wondering of what sort Genji’s misdemeanours could have been.",
+      "quijote_source": "Thereupon the duke seized the opportunity of practising this mystification upon him; so much did he enjoy everything connected with Sancho and Don Quixote.",
+      "genji_chapter": "VOLUME 1 CHAPTER V",
+      "quijote_chapter": "VOLUME 2 CHAPTER LXX."
+    },
+    {
+      "genji_half": "Although it was early days to begin thinking about the little Akashi Princess's Initiation,",
+      "quijote_half": "the duchess was as much delighted as Don Quixote was driven to desperation.",
+      "genji_source": "Although it was early days to begin thinking about the little Akashi Princess’s Initiation, Genji seemed bent upon celebrating it immediately.",
+      "quijote_source": "By every word that Sancho uttered, the duchess was as much delighted as Don Quixote was driven to desperation.",
+      "genji_chapter": "VOLUME 3 CHAPTER IV",
+      "quijote_chapter": "VOLUME 2 CHAPTER XXXIX."
+    },
+    {
+      "genji_half": "It so happened that Genji was actually at Akikonomu's palace when the scented bales arrived;",
+      "quijote_half": "for she found infinite enjoyment in listening to his shrewd remarks.",
+      "genji_source": "It so happened that Genji was actually at Akikonomu’s palace when the scented bales arrived; her servants at once showed them to him and told him whence they came.",
+      "quijote_source": "The duchess desired Sancho to come to her side, for she found infinite enjoyment in listening to his shrewd remarks.",
+      "genji_chapter": "VOLUME 1 CHAPTER XVII",
+      "quijote_chapter": "VOLUME 2 CHAPTER XXX."
+    },
+    {
+      "genji_half": "The claims, then, were pretty equally divided,",
+      "quijote_half": "and so, highly amused at Sancho Panza's simplicities, they placed Don Quixote in the cart as before.",
+      "genji_source": "The claims, then, were pretty equally divided, and after some hesitation Genji followed his own inclinations by appointing Akikonomu to share the Throne.",
+      "quijote_source": "The canon, the curate, and the barber told him he would act very wisely in doing as he said; and so, highly amused at Sancho Panza’s simplicities, they placed Don Quixote in the cart as before.",
+      "genji_chapter": "VOLUME 2 CHAPTER III",
+      "quijote_chapter": "VOLUME 1 CHAPTER LII."
+    },
+    {
+      "genji_half": "After performing before the Emperor, the Mummers visited the quarters of Lady Akikonomu,",
+      "quijote_half": "to describe the end of the government of the great Sancho Panza, flower and mirror of all governors of islands.",
+      "genji_source": "After performing before the Emperor, the Mummers visited the quarters of Lady Akikonomu, and finally finished their round very late in the day at the ex-Emperor Suzaku’s palace.",
+      "quijote_source": "The duchess received it with greatest delight, in which we will leave her, to describe the end of the government of the great Sancho Panza, flower and mirror of all governors of islands.",
+      "genji_chapter": "VOLUME 3 CHAPTER III",
+      "quijote_chapter": "VOLUME 2 CHAPTER LII."
+    },
+    {
+      "genji_half": "He was the best-looking and most promising of Tō no Chūjō's sons,",
+      "quijote_half": "and not understanding or heeding the words he addressed to her, she strove without speaking to free herself.",
+      "genji_source": "He was the best-looking and most promising of Tō no Chūjō’s sons, and as she watched him from within, Ochiba was astonished by his resemblance to Kashiwagi.",
+      "quijote_source": "Maritornes was fretting and sweating at finding herself held so fast by Don Quixote, and not understanding or heeding the words he addressed to her, she strove without speaking to free herself.",
+      "genji_chapter": "VOLUME 3 CHAPTER X",
+      "quijote_chapter": "VOLUME 1 CHAPTER XVI."
+    },
+    {
+      "genji_half": "Her father Prince Hyōbukyō had never put himself out for her,",
+      "quijote_half": "and making a bad bargain in every case, he got together a fair sum.",
+      "genji_source": "Her father Prince Hyōbukyō had never put himself out for her, and since Genji’s disgrace he stopped writing and no longer even enquired about her.",
+      "quijote_source": "Don Quixote next set about getting some money; and selling one thing and pawning another, and making a bad bargain in every case, he got together a fair sum.",
+      "genji_chapter": "VOLUME 1 CHAPTER XII",
+      "quijote_chapter": "VOLUME 1 CHAPTER VII."
+    },
+    {
+      "genji_half": "Koremitsu's son Hyōye no Jō was now sent to dig them up,",
+      "quijote_half": "and with a better will, gulped down and drained off very little less than his master.",
+      "genji_source": "Koremitsu’s son Hyōye no Jō was now sent to dig them up, and they were finally laid before Prince Sochi by Yūgiri.",
+      "quijote_source": "Don Quixote consented, and he, taking it with both hands, in good faith and with a better will, gulped down and drained off very little less than his master.",
+      "genji_chapter": "VOLUME 3 CHAPTER IV",
+      "quijote_chapter": "VOLUME 1 CHAPTER XVII."
+    },
+    {
+      "genji_half": "It was of course quite wrong that Kaoru, the child of a commoner,",
+      "quijote_half": "should attempt the dread adventure.",
+      "genji_source": "It was of course quite wrong that Kaoru, the child of a commoner, should be brought up with the Akashi Princess’s children.",
+      "quijote_source": "Don Quixote, then, observing that Rocinante could move, took it as a good sign and a signal that he should attempt the dread adventure.",
+      "genji_chapter": "VOLUME 3 CHAPTER IX",
+      "quijote_chapter": "VOLUME 1 CHAPTER XX."
+    },
+    {
+      "genji_half": "For several days Koremitsu did",
+      "quijote_half": "and placed themselves one at each side of her.",
+      "genji_source": "For several days Koremitsu did not present himself at Genji’s palace.",
+      "quijote_source": "The duke and Don Quixote likewise dismounted and placed themselves one at each side of her.",
+      "genji_chapter": "VOLUME 1 CHAPTER IV",
+      "quijote_chapter": "VOLUME 2 CHAPTER XXXIV."
+    },
+    {
+      "genji_half": "Koremitsu had patiently continued the enquiry",
+      "quijote_half": "and got his master's blessing, which Don Quixote gave him with tears, and he received blubbering.",
+      "genji_source": "Koremitsu had patiently continued the enquiry with which Genji entrusted him.",
+      "quijote_source": "On taking leave he kissed the hands of the duke and duchess and got his master’s blessing, which Don Quixote gave him with tears, and he received blubbering.",
+      "genji_chapter": "VOLUME 1 CHAPTER IV",
+      "quijote_chapter": "VOLUME 2 CHAPTER XLIV."
+    },
+    {
+      "genji_half": "On hearing Koremitsu's report Genji's heart was filled with pity",
+      "quijote_half": "and dined with the duke and duchess, and set out the same evening.",
+      "genji_source": "On hearing Koremitsu’s report Genji’s heart was filled with pity for the child’s state and he would like to have gone to her at once.",
+      "quijote_source": "So the conversation came to an end, and Don Quixote dressed himself and dined with the duke and duchess, and set out the same evening.",
+      "genji_chapter": "VOLUME 1 CHAPTER V",
+      "quijote_chapter": "VOLUME 2 CHAPTER LXX."
+    },
+    {
+      "genji_half": "It was not as if Kumoi were a stranger;",
+      "quijote_half": "and one of the largest the duke possessed.",
+      "genji_source": "It was not as if Kumoi were a stranger; she was Kashiwagi’s sister, and Ochiba had made great friends with her.",
+      "quijote_source": "To come to the point, then--Sancho with all his attendants arrived at a village of some thousand inhabitants, and one of the largest the duke possessed.",
+      "genji_chapter": "VOLUME 3 CHAPTER X",
+      "quijote_chapter": "VOLUME 2 CHAPTER XLV."
+    },
+    {
+      "genji_half": "Murasaki had adopted the Akashi Princess in its infancy,",
+      "quijote_half": "the entreaties of the duke were so urgent that he had to accept it.",
+      "genji_source": "Murasaki had adopted the Akashi Princess in its infancy, and according to the usual practice it would now be she who followed the girl to the Eastern Palace.",
+      "quijote_source": "The duke pressed Don Quixote to take the head of the table, and, though he refused, the entreaties of the duke were so urgent that he had to accept it.",
+      "genji_chapter": "VOLUME 3 CHAPTER V",
+      "quijote_chapter": "VOLUME 2 CHAPTER XXXI."
+    },
+    {
+      "genji_half": "The matter of Yūgiri and Kumoi",
+      "quijote_half": "speaking to the lady in the coach",
+      "genji_source": "The matter of Yūgiri and Kumoi had not been so much as mentioned during Tō no Chūjō’s visit.",
+      "quijote_source": "Don Quixote was, as has been said, speaking to the lady in the coach:",
+      "genji_chapter": "VOLUME 3 CHAPTER I",
+      "quijote_chapter": "VOLUME 1 CHAPTER VIII."
+    },
+    {
+      "genji_half": "Throughout this time Genji was constantly reminded of his separation from Oborozuki at the time",
+      "quijote_half": "he was struck dumb and rigid from head to foot.",
+      "genji_source": "Throughout this time Genji was constantly reminded of his separation from Oborozuki at the time when she became Consort of the Emperor Suzaku.",
+      "quijote_source": "When Don Quixote perceived what it was, he was struck dumb and rigid from head to foot.",
+      "genji_chapter": "VOLUME 3 CHAPTER III",
+      "quijote_chapter": "VOLUME 1 CHAPTER XX."
+    },
+    {
+      "genji_half": "The new quarters which Genji had built to the east of his palace were now ready",
+      "quijote_half": "and the man answered with no less but rather much more sprightliness than the last one.",
+      "genji_source": "The new quarters which Genji had built to the east of his palace were now ready and the lady from the Village of Falling Flowers was duly installed there.",
+      "quijote_source": "Don Quixote went on and asked another what his crime was, and the man answered with no less but rather much more sprightliness than the last one.",
+      "genji_chapter": "VOLUME 1 CHAPTER XVIII",
+      "quijote_chapter": "VOLUME 1 CHAPTER XXII."
+    }
+  ]
+}

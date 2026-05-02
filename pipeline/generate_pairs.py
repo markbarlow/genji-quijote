@@ -322,10 +322,21 @@ def main() -> None:
     )
     print(f"[generate_pairs] Quijote halves: {len(quijote_halves)}", file=sys.stderr)
 
-    # Step 9 — Generate scored pairs.
+    # Step 9 — Load pinned pairs and generate scored pairs.
     # Normalisation of scores within each pool is handled inside generate_pairs().
+    pinned_path = _REPO_ROOT / "config" / "pinned_pairs.json"
+    pinned_pairs: list[dict] = []
+    if pinned_path.exists():
+        with pinned_path.open(encoding="utf-8") as f:
+            pinned_data = json.load(f)
+        pinned_pairs = pinned_data.get("pairs", [])
+        print(f"[generate_pairs] Loaded {len(pinned_pairs)} pinned pairs.", file=sys.stderr)
+
     print(f"[generate_pairs] Generating {count} pairs...", file=sys.stderr)
-    pairs = generate_pairs(genji_halves, quijote_halves, count=count, weights=scoring_weights)
+    pairs = generate_pairs(
+        genji_halves, quijote_halves, count=count, weights=scoring_weights,
+        pinned_pairs=pinned_pairs,
+    )
     print(f"[generate_pairs] Generated {len(pairs)} pairs.", file=sys.stderr)
 
     # Step 10 — Write output JSON.

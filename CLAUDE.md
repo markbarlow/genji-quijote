@@ -16,7 +16,16 @@ Static GitHub Pages web app displaying ~1,021 literary mashup sentences combinin
 ```
 pipeline/          Python scripts (run offline to generate sentences.json)
 config/            JSON configuration files (scoring weights, character ranks, ignore patterns)
-web/               Frontend (vanilla JS, no framework)
+web/               Frontend (React 18 via CDN + Babel standalone, no build step)
+  index.html       App shell — loads React, Babel, fonts, boots app.jsx
+  app.jsx          Complete React app (all UI logic, queue, player, keyboard)
+  favicon.svg      Two-circle favicon in project colours
+  og-image.png     1200×630 social preview card
+  audio/           Self-hosted MP3s + manifest.json playlist
+  data/            pairs.json — currently dev_sample (50 pairs); replace with sentences.json
+  queue.js         Original Fisher-Yates queue module (superseded by app.jsx, kept for reference)
+  player.js        Original auto-play timer module (superseded, kept for reference)
+  keyboard.js      Original keyboard bindings module (superseded, kept for reference)
 source-materials/  Source texts and character lists — do not modify these files
 sentences.json     Generated artifact committed to repo — the production data file
 ```
@@ -44,10 +53,9 @@ python -m http.server 8000
 
 ## Important constraints
 
-- **Character ranks review checkpoint**: `config/character_ranks.json` must be reviewed and approved by the user before `character_detector.py` or any downstream code that reads it is written. See plan Phase A step 4 checkpoint.
-- **Frontend design deferred**: Full HTML structure, styling, and audio integration wait for a design prototype. Phase B builds JS logic modules only (queue.js, player.js, keyboard.js) and a minimal stub index.html.
 - **No mid-word splits**: The sentence halver tokenises by whitespace and splits between tokens only.
 - **Source materials are read-only**: Never modify files under `source-materials/`.
+- **Frontend uses no build step**: `app.jsx` is transpiled in-browser by Babel standalone. Do not introduce a bundler or npm dependencies.
 
 ## Architecture summary
 
@@ -55,4 +63,4 @@ The system is split into two independent phases:
 
 1. **Pipeline** (Python, offline): Parses source texts → extracts and cleans sentences → halves each sentence at a clause boundary → scores sentences and pairs → writes `sentences.json`. All pipeline logic is in pure functions (except `text_loader.py` which handles I/O) to make unit testing straightforward.
 
-2. **Frontend** (vanilla JS): Loads `sentences.json` on page load → uses a Fisher-Yates depletion queue to select pairs without repeating within a window of 30 → displays one pair at a time with auto-play, navigation, and source-sentence reveal on hover.
+2. **Frontend** (React 18, no build step): Loads `web/data/pairs.json` on page load → Fisher-Yates depletion queue (no repeat within window of 30) → displays one pair at a time with auto-play, word-by-word reveal, prev/next navigation, inline source reveal, self-hosted audio playlist, and shareable `#gq-NNNN` URLs. Genji half rendered in moss-green, Quijote half in terracotta. Responsive (desktop-first). To swap in the full dataset, replace `web/data/pairs.json` with the output of `generate_pairs.py`.

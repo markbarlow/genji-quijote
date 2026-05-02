@@ -8,7 +8,7 @@ while still exercising the full pairing algorithm.
 import json
 import pathlib
 
-from pipeline.pair_generator import SentenceHalf, _has_double_conjunction, generate_pairs
+from pipeline.pair_generator import SentenceHalf, _has_double_conjunction, _has_seam_fault, generate_pairs
 
 
 # ---------------------------------------------------------------------------
@@ -394,6 +394,58 @@ def test_double_conjunction_pairs_excluded():
     displays = [p["display"] for p in result]
     # The double-conjunction pair should not appear
     assert not any("vacant and and" in d for d in displays)
+
+
+def test_seam_fault_relative_opener():
+    """_has_seam_fault rejects Quijote halves starting with relative clause openers."""
+    g = "the moonlight fell across the silent garden,"
+    assert _has_seam_fault(g, "which he had never seen before.") is True
+    assert _has_seam_fault(g, "whom he had long admired in secret.") is True
+    assert _has_seam_fault(g, "whose horse had finally given out.") is True
+    assert _has_seam_fault(g, "the duchess laughed at his reply.") is False
+
+
+def test_seam_fault_relative_bigram():
+    """_has_seam_fault rejects Quijote halves starting with relative bigrams."""
+    g = "the moonlight fell across the silent garden,"
+    assert _has_seam_fault(g, "of whom he had heard so much.") is True
+    assert _has_seam_fault(g, "in which Sancho had already slept.") is True
+    assert _has_seam_fault(g, "by which time Don Quixote had departed.") is True
+    assert _has_seam_fault(g, "to whom the duke addressed his remarks.") is True
+
+
+def test_seam_fault_bare_participle_excluded():
+    """Quijote half starting with a participle is rejected when Genji half has no comma."""
+    # No comma in Genji half — participial phrase has no clause to attach to
+    g_no_comma = "Genji gazed at the pale winter sky"
+    assert _has_seam_fault(g_no_comma, "riding hard across the open plain.") is True
+    # Comma present — participial phrase is acceptable
+    g_with_comma = "Genji gazed at the pale winter sky, lost in thought,"
+    assert _has_seam_fault(g_with_comma, "riding hard across the open plain.") is False
+
+
+def test_relative_opener_pairs_excluded_from_output():
+    """Pairs where the Quijote half starts with 'which' are excluded from output."""
+    g = _make_genji(
+        half_text="the moonlight fell across the silent garden,",
+        full_sentence="the moonlight fell across the silent garden, and Genji sighed.",
+        score=0.9,
+    )
+    q_bad = _make_quijote(
+        half_text="which he had never seen before in all his travels.",
+        full_sentence="Something which he had never seen before in all his travels.",
+        score=0.9,
+    )
+    q_good = _make_quijote(
+        half_text="the duchess laughed heartily at the whole adventure.",
+        full_sentence="Then the duchess laughed heartily at the whole adventure.",
+        score=0.8,
+    )
+    result = generate_pairs([g], [q_bad, q_good], count=2, weights=_ALL_WEIGHTS)
+    displays = [p["display"] for p in result]
+    assert not any("which he had never" in d for d in displays), (
+        "Pair with relative opener 'which' must not appear in output"
+    )
 
 
 def test_empty_pools():

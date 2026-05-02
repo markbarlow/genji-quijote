@@ -11,6 +11,46 @@ Usage:
 """
 
 
+_WEAK_TERMINALS = frozenset({
+    # Articles
+    "the", "a", "an",
+    # Bare prepositions
+    "of", "in", "at", "by", "with", "for", "to", "from", "on",
+    "into", "upon", "about", "through", "between", "among", "against",
+    # Coordinating conjunctions that must not end the Genji half
+    "and", "but", "or", "nor", "yet",
+})
+
+
+def _is_weak_terminal(word: str) -> bool:
+    """Return True if word is an unsuitable terminal for the Genji half.
+
+    Weak terminals are articles, bare prepositions, coordinating conjunctions,
+    and any 1–2-character alphabetic token.  A Genji half ending on any of these
+    produces a dangling fragment that reads as incomplete regardless of the
+    Quijote half that follows.
+
+    Parameters
+    ----------
+    word : str
+        The last word of the candidate Genji half, with trailing punctuation
+        already stripped by the caller (so ``"moon,"`` arrives as ``"moon"``).
+
+    Returns
+    -------
+    bool
+        True if the word would leave the first half grammatically incomplete.
+    """
+    w = word.lower()
+    if w in _WEAK_TERMINALS:
+        return True
+    # 1–2-character alphabetic tokens are almost always articles, prepositions,
+    # or abbreviations — none of which close a clause naturally.
+    if len(w) <= 2 and w.isalpha():
+        return True
+    return False
+
+
 def halve_sentence(sentence: str, config: dict) -> tuple[str, str, str] | tuple[None, None, str]:
     """Split a sentence into two halves at a natural clause boundary near the midpoint.
 
@@ -79,39 +119,47 @@ def halve_sentence(sentence: str, config: dict) -> tuple[str, str, str] | tuple[
     # midpoint wins".
     candidates: list[int] = _indices_by_closeness(mid, window_start, window_end)
 
-    # Step 5b — Walk the candidates in closeness order. For each split
-    # point i we check two conditions:
-    #   a) words[i] is itself a boundary conjunction (e.g. "but", "and")
-    #   b) words[i-1] ends with a boundary punctuation character (e.g. ',', ';')
-    # Both checks use the boundary_priority list, which places punctuation chars
-    # before conjunctions. Single-character entries are punctuation; longer
-    # entries are conjunctions. We check the priority list in order so that if
-    # two markers tie on distance, higher-priority marker wins.
+    # Step 5b — Walk the candidates in closeness order. For each split point i:
+    #   a) Check whether words[i] is a boundary conjunction or words[i-1] ends
+    #      with a boundary punctuation character.
+    #   b) If a boundary is found, additionally check that the last word of the
+    #      resulting Genji half is not a weak terminal (article, preposition,
+    #      conjunction, or 1–2-char token).  Weak-terminal splits are skipped so
+    #      the search continues to the next candidate.
+    # The priority list places punctuation before conjunctions, so when two
+    # markers are equidistant the higher-priority one wins.
     split_index: int | None = None
     for i in candidates:
-        # Build a priority-ordered check for this candidate position.
+        found_boundary = False
         for marker in boundary_priority:
             if len(marker) == 1:
                 # Punctuation check: does the word just BEFORE the split end with this char?
-                # We require i > 0 so words[i-1] is valid (always true given window_start >= 1).
                 if words[i - 1][-1] == marker:
-                    split_index = i
+                    found_boundary = True
                     break
             else:
                 # Conjunction check: is the word AT the split point this conjunction?
                 if words[i] == marker:
-                    split_index = i
+                    found_boundary = True
                     break
-        if split_index is not None:
-            break
+        if found_boundary:
+            terminal = words[i - 1].rstrip(".,;:—")
+            if not _is_weak_terminal(terminal):
+                split_index = i
+                break
+            # Boundary found but terminal is weak — try next candidate.
 
-    # Step 6 — If no boundary was found in the window, fall back to the word
-    # midpoint. This is the "safe" split — it guarantees each half has at least
-    # floor(n/2) words, which the step-2 guard already confirmed is >= minimum.
+    # Step 6 — If no valid boundary was found (or all had weak terminals), fall
+    # back to the word midpoint — but only when the midpoint terminal is strong.
+    # If even the midpoint produces a weak terminal, the sentence cannot be split
+    # cleanly and is rejected entirely.
     strategy: str
     if split_index is not None:
         strategy = "clause_boundary"
     else:
+        midpoint_terminal = words[mid - 1].rstrip(".,;:—")
+        if _is_weak_terminal(midpoint_terminal):
+            return (None, None, "rejected")
         split_index = mid
         strategy = "word_midpoint"
 
@@ -125,7 +173,11 @@ def halve_sentence(sentence: str, config: dict) -> tuple[str, str, str] | tuple[
 
     if len(first_words) < minimum or len(second_words) < minimum:
         if strategy == "clause_boundary":
-            # The clause boundary created an invalid split — fall back to midpoint.
+            # The clause boundary created an invalid split — fall back to midpoint,
+            # provided the midpoint terminal is not itself weak.
+            midpoint_terminal = words[mid - 1].rstrip(".,;:—")
+            if _is_weak_terminal(midpoint_terminal):
+                return (None, None, "rejected")
             split_index = mid
             first_words = words[:split_index]
             second_words = words[split_index:]
