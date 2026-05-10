@@ -22,10 +22,10 @@ Around 1,021 pairs, generated offline from the Project Gutenberg texts and serve
 ```
 pipeline/          Offline Python scripts that generate pairs.json from source texts
 config/            Scoring weights, character registry, ignore patterns
-web/               Static frontend (React 18, no build step)
+docs/              Static frontend (React 18, no build step) — served by GitHub Pages
   index.html       App shell
   app.jsx          Complete React app
-  data/pairs.json  The pair dataset (currently dev sample; replace with full output)
+  data/pairs.json  The pair dataset (1,021 pairs)
   audio/           Self-hosted MP3s + manifest.json
 source-materials/  Source texts and character lists (read-only)
 dev_sample.json    50-pair development sample
@@ -38,7 +38,7 @@ sentences.json     Full 1,021-pair production dataset (generated, committed to r
 
 ```bash
 python3 -m http.server 8000
-# Open http://localhost:8000/web/
+# Open http://localhost:8000/docs/
 ```
 
 No build step. The frontend loads React and Babel from CDN and transpiles `app.jsx` in-browser.
@@ -72,7 +72,7 @@ python pipeline/generate_pairs.py --count 1021 --output sentences.json
 After generating the full set, copy it into the frontend:
 
 ```bash
-cp sentences.json web/data/pairs.json
+cp sentences.json docs/data/pairs.json
 ```
 
 ### Configuration
@@ -87,13 +87,13 @@ cp sentences.json web/data/pairs.json
 
 ## Audio
 
-Drop MP3 files into `web/audio/` and list them in `web/audio/manifest.json`. The app shuffles the playlist on load and streams tracks progressively. See `web/audio/README.md` for details.
+Drop MP3 files into `docs/audio/` and list them in `docs/audio/manifest.json`. The app shuffles the playlist on load and streams tracks progressively. See `docs/audio/README.md` for details.
 
 ---
 
 ## Deployment
 
-See `web/DEPLOY.md` for the GitHub Pages deployment checklist.
+See `docs/DEPLOY.md` for the GitHub Pages deployment checklist.
 
 ---
 

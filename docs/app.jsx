@@ -7,7 +7,7 @@ const { useState, useEffect, useLayoutEffect, useRef, useCallback, useMemo } = R
 // Defaults — exposed as constants in case you want to tune them.
 // ---------------------------------------------------------------------------
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "wpm": 160,
+  "wpm": 150,        // reading speed used to compute auto-play duration; see computeDuration below
   "typingReveal": true,
   "showTimer": true
 }/*EDITMODE-END*/;
@@ -283,6 +283,9 @@ function App({ tweakValues, pairs }) {
   }, [pair]);
 
   // --- compute duration from wpm / word count -----------------------------
+  // Display time (ms) = (word count / wpm) * 60000, floored at 4 seconds.
+  // wpm is set in TWEAK_DEFAULTS above. The 4s floor ensures very short pairs
+  // still have enough dwell time to read comfortably.
   const computeDuration = useCallback(
     (p) => {
       const words = p.display.split(/\s+/).filter(Boolean).length;
