@@ -535,7 +535,7 @@ function TypographicStage({ pair, typo, playing, typingReveal, sourceOpen, setSo
         style={{
           color,
           opacity: visible ? 1 : 0,
-          transition: "opacity 420ms ease-out",
+          transition: visible ? "opacity 420ms ease-out" : "none",
           display: "inline",
         }}
       >
