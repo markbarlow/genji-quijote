@@ -93,7 +93,14 @@ Drop MP3 files into `docs/audio/` and list them in `docs/audio/manifest.json`. T
 
 ## Deployment
 
-See `docs/DEPLOY.md` for the GitHub Pages deployment checklist.
+Served from the `docs/` folder on the `main` branch via GitHub Pages
+(**Settings → Pages → Branch: main, Folder: /docs**).
+
+Live at: `https://markbarlow.github.io/genji-quijote/`
+
+To update the deployed dataset, regenerate and copy (see Pipeline above), then push — GitHub Pages redeploys automatically.
+
+OG image URLs in `docs/index.html` are set to absolute URLs for this domain. Update the three `og:url` / `og:image` / `twitter:image` tags if redeploying elsewhere.
 
 ---
 

@@ -128,9 +128,9 @@
     },
     {
       "id": "gq-0005",
-      "display": "For several days Koremitsu did and placed themselves one at each side of her.",
-      "genji_half": "For several days Koremitsu did",
-      "quijote_half": "and placed themselves one at each side of her.",
+      "display": "For several days Koremitsu placed themselves one at each side of her.",
+      "genji_half": "For several days Koremitsu",
+      "quijote_half": "placed themselves one at each side of her.",
       "genji_source": "For several days Koremitsu did not present himself at Genji’s palace.",
       "quijote_source": "The duke and Don Quixote likewise dismounted and\nplaced themselves one at each side of her.",
       "genji_chars": [
@@ -24614,10 +24614,10 @@
     },
     {
       "id": "gq-0963",
-      "display": "and he made many suggestions that now, even though thou repentest, thou canst not help being mine.",
-      "genji_half": "and he made many suggestions",
+      "display": "And he made many suggestions that now, even though thou repentest, thou canst not help being mine.",
+      "genji_half": "And he made many suggestions",
       "quijote_half": "that now, even though thou repentest, thou canst not help being mine.",
-      "genji_source": "and he made many suggestions for\nTamakatsura’s polite education.",
+      "genji_source": "And he made many suggestions for\nTamakatsura’s polite education.",
       "quijote_source": "It was thy will to make me thine, and\nthou didst so follow thy will, that now, even though thou repentest, thou\ncanst not help being mine.",
       "genji_chars": [
         "Tamakatsura"
