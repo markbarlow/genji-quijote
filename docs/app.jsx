@@ -551,8 +551,11 @@ function TypographicStage({ pair, typo, playing, typingReveal, sourceOpen, setSo
         alignItems: "center",
         justifyContent: "center",
         padding: isMobile ? "82px 22px 100px" : "140px 8vw",
+        // When a source panel is open on desktop, add bottom padding so the
+        // document becomes scrollable and the panel can be scrolled into view.
+        paddingBottom: !isMobile && sourceOpen ? "360px" : undefined,
         opacity: fading ? 0 : 1,
-        transition: "opacity 140ms ease-out",
+        transition: "opacity 140ms ease-out, padding-bottom 320ms ease",
         // Allow long passages to scroll on small screens rather than overflow.
         overflowY: isMobile ? "auto" : "visible",
       }}
@@ -708,14 +711,23 @@ function InlineSource({ pair, which, mono }) {
       setMaxH(Math.max(60, Math.min(600, avail)));
     };
     // Measure now AND after the open animation settles, so the cap reflects
-    // the panel's true top once expanded.
+    // the panel's true top once expanded. On desktop, the stage paddingBottom
+    // expands at 320ms, making the page scrollable; we then scroll the panel
+    // into view and re-measure with the new available space.
     measure();
     const t1 = setTimeout(measure, 60);
     const t2 = setTimeout(measure, 360);
+    const t3 = setTimeout(() => {
+      if (!isMobile && wrapRef.current) {
+        wrapRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        setTimeout(measure, 500);
+      }
+    }, 340);
     window.addEventListener("resize", measure);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
+      clearTimeout(t3);
       window.removeEventListener("resize", measure);
     };
   }, [which, renderedWhich, pair]);

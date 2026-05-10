@@ -3,7 +3,59 @@ General:
 Choice of the J for Quijote
 The source texts
 
+Check CLAUDE.md and README.md for what it says already, and current about:
+ ~1,021 literary mashup sentences combining The Tale of Genji (first half) and Don Quixote (second half), in the exquisite-corpse tradition.
+A literary mashup web app combining *The Tale of Genji* and *Don Quixote* in the exquisite-corpse tradition. Each pair joins the first half of a sentence from Genji with the second half of a sentence from Quixote — exploiting the tonal contrast between Genji's interior, melancholy register and Quixote's comic, earthy one.
 
+ Pipeline reads the source texts, cleans and segments them into sentences, halves each sentence at a clause boundary, scores sentence halves, and pairs the top-scoring Genji halves with top-scoring Quixote halves.
+
+ Both texts are in the public domain via Project Gutenberg:
+
+ - *The Tale of Genji* — Murasaki Shikibu, tr. Suematsu Kenchio
+ - *Don Quixote* — Miguel de Cervantes, tr. John Ormsby
+
+1,021 pairs, generated offline from the Project Gutenberg texts and served as a static site on GitHub Pages.
+
+
+A creative mashup project combining The Tale of Genji and Don Quijote — both public domain, available on Project Gutenberg. Working title: "The Shining Prince meets The Knight Errant".
+
+combining the first half of a sentence from one work with the second half from the other — like the surrealist "exquisite corpse" technique. The tonal contrast is rich: Genji is interior, seasonal, melancholy, full of mono no aware; Quijote is comic, delusional, earthy, Sancho always deflating the heroics.
+
+I often use the Spanish "Quijote" here as a synonym for "Quixote" which is the usual English translation. In the text you will find Quixote as it is English.
+
+Process involved iterating through random sample generations to build up a set of heuristics. For example, excluding problematic text such as XYC (removing footnotes, latin text in Quijote, boilerplate, Weak terminals are articles, bare prepositions, coordinating conjunctions,and any 1–2-character alphabetic token e.g. the a an by on or. ) and favouring snippets featuring characters with classification of major and minor. Minimum half lengths.
+
+Assigns a raw floating-point score to a cleaned sentence based on four
+weighted components: length (sweet-spot), character presence, place-name
+heuristic, and lexical diversity (type-token ratio).
+
+Character ranking for major and minors
+
+
+Generated 2,000 for final review.
+Cut just under 612
+Edited 361 - limited myself to editing the end of a Genji or the start of a Quijote, nothing more, to remain faithful to the source.
+The remainder
+This bit was rather painstaking.
+The 10,21
+
+
+
+  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum — some
+  explanation of the background. Each mashup joins the first half of a
+  sentence from Murasaki Shikibu's <em>Tale of Genji</em> with the second
+  half of a sentence from Cervantes' <em>Don Quijote</em>.
+
+  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum — some
+  explanation of the background. Both texts in the public domain via
+  Project Gutenberg.
+</p>
+
+
++ blog post
++ related
+
+-----------
 
 gq-0463
 For example, her stepmother had even held her responsible for Makibashira's fall; and Don Quixote went some twelve paces forward to meet her.
