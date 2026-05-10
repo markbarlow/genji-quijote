@@ -84,7 +84,10 @@ def main() -> None:
             else:
                 kept_ids.append(row["id"])
                 if marker in _EDIT_MARKERS:
-                    edits[row["id"]] = (row["genji_half"].strip(), row["quijote_half"].strip())
+                    edits[row["id"]] = (
+                        " ".join(row["genji_half"].split()),
+                        " ".join(row["quijote_half"].split()),
+                    )
                     edited_count += 1
 
     print(

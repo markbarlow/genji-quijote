@@ -12,7 +12,7 @@ build step.
 In your repo's **Settings → Pages**:
 - **Source:** Deploy from a branch
 - **Branch:** `main` (or whichever holds the latest)
-- **Folder:** `/ (root)`
+- **Folder:** `/docs`
 
 GitHub will give you a URL like `https://YOURNAME.github.io/REPO-NAME/`.
 
@@ -51,7 +51,7 @@ These are independent of deploy but worth doing before sharing widely:
 - **Audio** — drop your `.mp3` files into `audio/` and list them in
   `audio/manifest.json`. Without files, the audio toggle will be a no-op.
 - **Full pair set** — currently uses `data/pairs.json` (the 50-pair dev sample).
-  Replace `web/data/pairs.json` with your full `sentences.json` when ready.
+  Replace `docs/data/pairs.json` with your full `sentences.json` when ready.
 
 ## 5. The `.nojekyll` file
 

@@ -16,13 +16,13 @@ Static GitHub Pages web app displaying ~1,021 literary mashup sentences combinin
 ```
 pipeline/          Python scripts (run offline to generate sentences.json)
 config/            JSON configuration files (scoring weights, character ranks, ignore patterns)
-web/               Frontend (React 18 via CDN + Babel standalone, no build step)
+docs/              Frontend (React 18 via CDN + Babel standalone, no build step)
   index.html       App shell — loads React, Babel, fonts, boots app.jsx
   app.jsx          Complete React app (all UI logic, queue, player, keyboard)
   favicon.svg      Two-circle favicon in project colours
   og-image.png     1200×630 social preview card
   audio/           Self-hosted MP3s + manifest.json playlist
-  data/            pairs.json — currently dev_sample (50 pairs); replace with sentences.json
+  data/            pairs.json — production dataset (1,021 pairs)
   queue.js         Original Fisher-Yates queue module (superseded by app.jsx, kept for reference)
   player.js        Original auto-play timer module (superseded, kept for reference)
   keyboard.js      Original keyboard bindings module (superseded, kept for reference)
@@ -48,7 +48,7 @@ python pipeline/generate_pairs.py --count 1021 --output sentences.json
 
 # Serve the frontend locally for testing
 python -m http.server 8000
-# Then open http://localhost:8000/web/
+# Then open http://localhost:8000/docs/
 ```
 
 ## Important constraints
@@ -63,4 +63,4 @@ The system is split into two independent phases:
 
 1. **Pipeline** (Python, offline): Parses source texts → extracts and cleans sentences → halves each sentence at a clause boundary → scores sentences and pairs → writes `sentences.json`. All pipeline logic is in pure functions (except `text_loader.py` which handles I/O) to make unit testing straightforward.
 
-2. **Frontend** (React 18, no build step): Loads `web/data/pairs.json` on page load → Fisher-Yates depletion queue (no repeat within window of 30) → displays one pair at a time with auto-play, word-by-word reveal, prev/next navigation, inline source reveal, self-hosted audio playlist, and shareable `#gq-NNNN` URLs. Genji half rendered in moss-green, Quijote half in terracotta. Responsive (desktop-first). To swap in the full dataset, replace `web/data/pairs.json` with the output of `generate_pairs.py`.
+2. **Frontend** (React 18, no build step): Loads `docs/data/pairs.json` on page load → Fisher-Yates depletion queue (no repeat within window of 30) → displays one pair at a time with auto-play, word-by-word reveal, prev/next navigation, inline source reveal, self-hosted audio playlist, and shareable `#gq-NNNN` URLs. Genji half rendered in moss-green, Quijote half in terracotta. Responsive (desktop-first). To swap in the full dataset, replace `docs/data/pairs.json` with the output of `generate_pairs.py`.
