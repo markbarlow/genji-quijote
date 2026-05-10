@@ -53,14 +53,14 @@ function useIsMobile(breakpoint = 600) {
   return isMobile;
 }
 
-function formatChapter(ch) {
-  // "VOLUME 3 CHAPTER X" -> "Vol. 3 · Ch. X"
+function formatChapter(ch, compact = false) {
+  // "VOLUME 3 CHAPTER X" -> "Vol. 3 · Ch. X" (desktop) or "3 · X" (mobile)
   if (!ch) return "";
   const m = ch.match(/VOLUME\s+(\S+)\s+CHAPTER\s+(\S+)/i);
   if (!m) return ch;
   const vol = m[1];
   const chap = m[2].replace(/\.$/, "");
-  return `Vol. ${vol} · Ch. ${chap}`;
+  return compact ? `${vol} · ${chap}` : `Vol. ${vol} · Ch. ${chap}`;
 }
 
 // ---------------------------------------------------------------------------
@@ -591,7 +591,7 @@ function TypographicStage({ pair, typo, playing, typingReveal, sourceOpen, setSo
         {/* Metadata line — chips stay inline, but the InlineSource panel
             below them is absolutely positioned so its expansion doesn't push
             the mashup upward when the user opens a source. */}
-        <MetaLine pair={pair} mono={typo.mono} sourceOpen={sourceOpen} setSourceOpen={setSourceOpen} />
+        <MetaLine pair={pair} mono={typo.mono} sourceOpen={sourceOpen} setSourceOpen={setSourceOpen} isMobile={isMobile} />
       </div>
     </div>
   );
@@ -601,7 +601,7 @@ function TypographicStage({ pair, typo, playing, typingReveal, sourceOpen, setSo
 // Metadata line — renders the InlineSource panel
 // below the chips when one is active.
 // ---------------------------------------------------------------------------
-function MetaLine({ pair, mono, sourceOpen, setSourceOpen }) {
+function MetaLine({ pair, mono, sourceOpen, setSourceOpen, isMobile }) {
   // Clicking the active chip closes the panel; clicking the other swaps to it.
   const onChipClick = (which) => {
     setSourceOpen(sourceOpen === which ? null : which);
@@ -609,6 +609,19 @@ function MetaLine({ pair, mono, sourceOpen, setSourceOpen }) {
 
   return (
     <div style={{ marginTop: 40, position: "relative" }}>
+      {/* On mobile: pair ID sits on its own line above the chapter chips */}
+      {isMobile && (
+        <div style={{
+          fontFamily: mono,
+          fontSize: 11,
+          letterSpacing: "0.08em",
+          textTransform: "uppercase",
+          color: PALETTE.inkFaint,
+          marginBottom: 10,
+        }}>
+          #{pair.id}
+        </div>
+      )}
       <div
         style={{
           display: "flex",
@@ -622,30 +635,22 @@ function MetaLine({ pair, mono, sourceOpen, setSourceOpen }) {
           color: PALETTE.inkDim,
         }}
       >
-        <span style={{ color: PALETTE.inkFaint }}>#{pair.id}</span>
+        {!isMobile && <span style={{ color: PALETTE.inkFaint }}>#{pair.id}</span>}
         <button
           onClick={() => onChipClick("genji")}
-          style={metaChipStyle(
-            PALETTE.genji,
-            mono,
-            sourceOpen === "genji"
-          )}
+          style={metaChipStyle(PALETTE.genji, mono, sourceOpen === "genji")}
           title="Reveal the original Genji sentence"
         >
           <span style={{ color: PALETTE.inkFaint, marginRight: 6 }}>Genji</span>
-          {formatChapter(pair.genji_meta?.chapter)}
+          {formatChapter(pair.genji_meta?.chapter, isMobile)}
         </button>
         <button
           onClick={() => onChipClick("quijote")}
-          style={metaChipStyle(
-            PALETTE.quijote,
-            mono,
-            sourceOpen === "quijote"
-          )}
+          style={metaChipStyle(PALETTE.quijote, mono, sourceOpen === "quijote")}
           title="Reveal the original Quijote sentence"
         >
           <span style={{ color: PALETTE.inkFaint, marginRight: 6 }}>Quijote</span>
-          {formatChapter(pair.quijote_meta?.chapter)}
+          {formatChapter(pair.quijote_meta?.chapter, isMobile)}
         </button>
       </div>
 
