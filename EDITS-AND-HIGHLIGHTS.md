@@ -52,8 +52,8 @@ The 10,21
 </p>
 
 
-+ blog post
-+ related
+- blog post todo
+- related todo 
 
 -----------
 
