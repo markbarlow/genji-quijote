@@ -465,8 +465,7 @@ function TopBar({ mono, onAbout, audioMuted, onToggleAudio, isMobile }) {
           title={audioMuted ? "Unmute music" : "Mute music"}
           style={chromeBtn(mono)}
         >
-          {/* On mobile: just the symbol — saves horizontal space */}
-          {isMobile ? (audioMuted ? "♪" : "♪ ▸") : (audioMuted ? "♪ muted" : "♪ playing")}
+          {audioMuted ? "♪ muted" : "♪ playing"}
         </button>
         <button onClick={onAbout} style={chromeBtn(mono)}>
           About
