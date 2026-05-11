@@ -993,10 +993,7 @@ function AboutOverlay({ mono, onClose, isMobile }) {
             margin: "0 0 16px",
           }}
         >
-          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum — some
-          explanation of the background. Each mashup joins the first half of a
-          sentence from Murasaki Shikibu's <em>Tale of Genji</em> with the second
-          half of a sentence from Cervantes' <em>Don Quijote</em>.
+Konnichiwa, &#161;saludos! What would happen if the worlds of Prince Genji and Don Quijote were to collide? If the world's first novel met the West's first novel? If the mono no aware and interior, seasonal, melancholy tone of the former ran into the comic, delusional, earthy tone of the latter?
         </p>
         <p
           style={{
@@ -1006,9 +1003,7 @@ function AboutOverlay({ mono, onClose, isMobile }) {
             margin: "0 0 28px",
           }}
         >
-          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum — some
-          explanation of the background. Both texts in the public domain via
-          Project Gutenberg.
+This project seeks to answer those questions with sentences composed from the two works, in the <a href="https://en.wikipedia.org/wiki/Exquisite_corpse">exquisite corpse</a> tradition. 1,021 sentences to be precise, in honour of the year Murasaki Shikibu finished <em>The Tale of Genji</em>, using as source text the public domain works from Project Gutenburg. The Genji translation by Suematsu Kenchio is paired with the John Ormsby translation of Miguel de Cervantes' <em>Don Quijote de la Mancha</em>.
         </p>
 
         {/* Legend */}
@@ -1051,7 +1046,7 @@ function AboutOverlay({ mono, onClose, isMobile }) {
         </div>
         <div style={{ marginBottom: 24 }}>
           <a href="#" style={linkStyle}>
-            A note on the exquisite-corpse technique →
+            The Tale of Genji and Quijote →
           </a>
         </div>
 
@@ -1068,8 +1063,9 @@ function AboutOverlay({ mono, onClose, isMobile }) {
           Related
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-          <a href="#" style={linkStyle}>The Lexicorium →</a>
           <a href="#" style={linkStyle}>The Memory Palace →</a>
+          <a href="#" style={linkStyle}>Mulberry Harbour music →</a>
+          <a href="#" style={linkStyle}>The Lexicorium →</a>
           <a href="#" style={linkStyle}>Colorless green ideas →</a>
         </div>
 

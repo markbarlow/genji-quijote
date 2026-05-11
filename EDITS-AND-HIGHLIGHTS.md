@@ -1,25 +1,20 @@
 
 General:
 Choice of the J for Quijote
-The source texts
 
-Check CLAUDE.md and README.md for what it says already, and current about:
- ~1,021 literary mashup sentences combining The Tale of Genji (first half) and Don Quixote (second half), in the exquisite-corpse tradition.
-A literary mashup web app combining *The Tale of Genji* and *Don Quixote* in the exquisite-corpse tradition. Each pair joins the first half of a sentence from Genji with the second half of a sentence from Quixote — exploiting the tonal contrast between Genji's interior, melancholy register and Quixote's comic, earthy one.
+Konnichiwa, saludos! What would happen if the worlds of Prince Genji and Don Quijote were to collide? If the world's first novel met the West's first novel? If the mono no aware and interior, seasonal, melancholy tone of the former ran into the comic, delusional, earthy tone of the latter?
 
- Pipeline reads the source texts, cleans and segments them into sentences, halves each sentence at a clause boundary, scores sentence halves, and pairs the top-scoring Genji halves with top-scoring Quixote halves.
-
- Both texts are in the public domain via Project Gutenberg:
-
- - *The Tale of Genji* — Murasaki Shikibu, tr. Suematsu Kenchio
- - *Don Quixote* — Miguel de Cervantes, tr. John Ormsby
-
-1,021 pairs, generated offline from the Project Gutenberg texts and served as a static site on GitHub Pages.
+This project seeks to answer those questions with sentences composed from the two works, in the <a href="https://en.wikipedia.org/wiki/Exquisite_corpse">exquisite corpse</a< tradition. 1,021 sentences to be precise, in honour of the year Murasaki Shikibu finished The Tale of Genji, using as source text the public domain works from Project Gutenburg. The Genji translation by Suematsu Kenchio is paired with the John Ormsby translation of Miguel de Cervantes' Don Quijote de la Mancha.
 
 
-A creative mashup project combining The Tale of Genji and Don Quijote — both public domain, available on Project Gutenberg. Working title: "The Shining Prince meets The Knight Errant".
+Paired here with the West's first novel, Miguel de Cervantes' Don Quijote de la Mancha.
+the first half from Genji the second half from Quijote,
 
-combining the first half of a sentence from one work with the second half from the other — like the surrealist "exquisite corpse" technique. The tonal contrast is rich: Genji is interior, seasonal, melancholy, full of mono no aware; Quijote is comic, delusional, earthy, Sancho always deflating the heroics.
+
+
+
+
+Pipeline reads the source texts, cleans and segments them into sentences, halves each sentence at a clause boundary, scores sentence halves, and pairs the top-scoring Genji halves with top-scoring Quixote halves.
 
 I often use the Spanish "Quijote" here as a synonym for "Quixote" which is the usual English translation. In the text you will find Quixote as it is English.
 
@@ -53,7 +48,7 @@ The 10,21
 
 
 - blog post todo
-- related todo 
+- related todo
 
 -----------
 
