@@ -1066,7 +1066,6 @@ This project seeks to answer those questions with sentences composed from the tw
           <a href="#" style={linkStyle}>The Memory Palace →</a>
           <a href="#" style={linkStyle}>Mulberry Harbour music →</a>
           <a href="#" style={linkStyle}>The Lexicorium →</a>
-          <a href="#" style={linkStyle}>Colorless green ideas →</a>
         </div>
 
         {/* Keyboard shortcuts — desktop only (mobile has no keyboard) */}
