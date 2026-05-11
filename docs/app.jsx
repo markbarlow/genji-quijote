@@ -993,7 +993,7 @@ function AboutOverlay({ mono, onClose, isMobile }) {
             margin: "0 0 16px",
           }}
         >
-Konnichiwa, &#161;saludos! What would happen if the worlds of Prince Genji and Don Quijote were to collide? If the world's first novel met the West's first novel? If the mono no aware and interior, seasonal, melancholy tone of the former ran into the comic, delusional, earthy tone of the latter?
+Konnichiwa, &#161;saludos! What would happen if the worlds of Prince Genji and Don Quijote were to collide? If the world's first novel met the West's first novel? If the mono no aware and interior, cyclical, melancholy tone of the former ran into the comic, delusional, earthy tone of the latter?
         </p>
         <p
           style={{
@@ -1003,7 +1003,7 @@ Konnichiwa, &#161;saludos! What would happen if the worlds of Prince Genji and D
             margin: "0 0 28px",
           }}
         >
-This project seeks to answer those questions with sentences composed from the two works, in the <a href="https://en.wikipedia.org/wiki/Exquisite_corpse">exquisite corpse</a> tradition. 1,021 sentences to be precise, in honour of the year Murasaki Shikibu finished <em>The Tale of Genji</em>, using as source text the public domain works from Project Gutenburg. The Genji translation by Suematsu Kenchio is paired with the John Ormsby translation of Miguel de Cervantes' <em>Don Quijote de la Mancha</em>.
+This project seeks to answer those questions with sentences composed from the two works, in the exquisite corpse tradition. 1,021 sentences to be precise, in honour of the year Murasaki Shikibu finished <em>The Tale of Genji</em>, using as source text the public domain works from Project Gutenburg. The Genji translation by Suematsu Kenchio is paired with the John Ormsby translation of Miguel de Cervantes' <em>Don Quijote de la Mancha</em>.
         </p>
 
         {/* Legend */}

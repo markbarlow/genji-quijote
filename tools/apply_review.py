@@ -102,6 +102,10 @@ def main() -> None:
     source_by_quijote_half = {p["quijote_half"]: p["quijote_source"] for p in pool_pairs}
     chapter_by_genji_half = {p["genji_half"]: p["genji_meta"]["chapter"] for p in pool_pairs}
     chapter_by_quijote_half = {p["quijote_half"]: p["quijote_meta"]["chapter"] for p in pool_pairs}
+    # Full-pair lookups for cross-half fallback: if the edited half can't be
+    # resolved, find the pool pair via the unchanged other half and use its data.
+    pool_pair_by_genji_half = {p["genji_half"]: p for p in pool_pairs}
+    pool_pair_by_quijote_half = {p["quijote_half"]: p for p in pool_pairs}
 
     def _resolve_genji(half: str) -> tuple[str, str]:
         """Return (genji_source, chapter) for a possibly-trimmed Genji half.

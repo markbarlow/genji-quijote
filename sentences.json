@@ -561,7 +561,7 @@
       "display": "It may well be imagined with what consternation both Prince Hyōbukyō her brother and Genji himself asked Sancho what was amiss with him.",
       "genji_half": "It may well be imagined with what consternation both Prince Hyōbukyō her brother and Genji himself",
       "quijote_half": "asked Sancho what was amiss with him.",
-      "genji_source": "It may well be imagined with what consternation both Prince Hyōbukyō her brother and Genji himself",
+      "genji_source": "It may well be\nimagined with what consternation both Prince Hyōbukyō her brother and\nGenji himself received this utterly unexpected announcement.",
       "quijote_source": "The innkeeper, seeing Don Quixote slung across the ass, asked Sancho what\nwas amiss with him.",
       "genji_chars": [
         "Genji",
@@ -574,7 +574,7 @@
       "score": 1.065,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 1 CHAPTER X",
         "sentence_index": 416,
         "half_strategy": "clause_boundary"
       },
@@ -602,7 +602,7 @@
       "score": 1.065,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 1 CHAPTER XIV",
         "sentence_index": 209,
         "half_strategy": "word_midpoint"
       },
@@ -674,7 +674,7 @@
       "display": "It was the existence of this unfortunate entanglement that bent his brows, and before long two streams of tears escaped from his eyes.",
       "genji_half": "It was the existence of this unfortunate entanglement that",
       "quijote_half": "bent his brows, and before long two streams of tears escaped from his eyes.",
-      "genji_source": "It was the existence of this unfortunate entanglement that",
+      "genji_source": "It was the existence of this unfortunate entanglement that had\ndiscouraged Genji from furthering Prince Higekuro’s suit.",
       "quijote_source": "Cardenio heard the name of Luscinda, but he only shrugged his shoulders,\nbit his lips, bent his brows, and before long two streams of tears\nescaped from his eyes.",
       "genji_chars": [
         "Genji",
@@ -687,7 +687,7 @@
       "score": 1.065,
       "mode": "character_encounter",
       "genji_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 3 CHAPTER II",
         "sentence_index": 49,
         "half_strategy": "word_midpoint"
       },
@@ -2169,7 +2169,7 @@
       "genji_half": "Why was it, he asked himself,",
       "quijote_half": "of necessity not so delicate as that of his master",
       "genji_source": "Why was it, he asked himself, that Kashiwagi had\nseemed to take so little interest in Ochiba?",
-      "quijote_source": "of necessity not so delicate as that of his master",
+      "quijote_source": "But the fact is, that the stomach of\npoor Sancho was of necessity not so delicate as that of his master, and",
       "genji_chars": [
         "Kashiwagi",
         "Ochiba"
@@ -2185,7 +2185,7 @@
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 1 CHAPTER XVII.",
         "sentence_index": 6,
         "half_strategy": "word_midpoint"
       }
@@ -4881,7 +4881,7 @@
       "genji_half": "The Minister of the Right was aware that his youngest daughter was still pining",
       "quijote_half": "with a surcoat of tawny cloth",
       "genji_source": "The Minister of the Right was aware that his youngest daughter was\nstill pining for Prince Genji and he said one day to Princess Kōkiden:",
-      "quijote_source": "with a surcoat of tawny cloth",
+      "quijote_source": "That afternoon they took Don Quixote out for a stroll, not in his armour\nbut in street costume, with a surcoat of tawny cloth upon him, that at\nthat season would have made ice itself sweat.",
       "genji_chars": [
         "Genji",
         "Kōkiden"
@@ -4897,7 +4897,7 @@
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 2 CHAPTER LXII.",
         "sentence_index": 5,
         "half_strategy": "clause_boundary"
       }
@@ -9216,7 +9216,7 @@
       "genji_half": "Genji had very little business at this season,",
       "quijote_half": "however, put the following lines: A doughty gentleman lies here; A stranger all his life to fear; Nor in his death could Death prevail",
       "genji_source": "Genji\nhad very little business at this season, and there was a great deal of\nmusic and entertaining at the New Palace.",
-      "quijote_source": "however, put the following lines: A doughty gentleman lies here; A stranger all his life to fear; Nor in his death could Death prevail",
+      "quijote_source": "The lamentations of Sancho and the niece and housekeeper are\nomitted here, as well as the new epitaphs upon his tomb; Samson Carrasco,\nhowever, put the following lines:\n\nA doughty gentleman lies here;\nA stranger all his life to fear;\nNor in his death could Death prevail,",
       "genji_chars": [
         "Genji"
       ],
@@ -9232,7 +9232,7 @@
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 2 CHAPTER LXXIV.",
         "sentence_index": 21,
         "half_strategy": "clause_boundary"
       }
@@ -10098,7 +10098,7 @@
       "genji_half": "Genji had spoken lately about the possibility",
       "quijote_half": "and all the citizens had already heard",
       "genji_source": "Genji had spoken lately about the possibility of her\nbeing summoned to the Palace.",
-      "quijote_source": "and all the citizens had already heard",
+      "quijote_source": "Don Antonio sent word to the commandant of the\ngalleys that he intended to bring his guest, the famous Don Quixote of La\nMancha, of whom the commandant and all the citizens had already heard,\nthat afternoon to see them; and what happened on board of them will be\ntold in the next chapter.",
       "genji_chars": [
         "Genji"
       ],
@@ -10113,7 +10113,7 @@
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 2 CHAPTER LXII.",
         "sentence_index": 34,
         "half_strategy": "clause_boundary"
       }
@@ -11549,7 +11549,7 @@
       "genji_half": "But Yūgiri guessed easily enough what impression such an episode was likely to have made,",
       "quijote_half": "and went along thrumming the letters as if they were a tambourine",
       "genji_source": "But Yūgiri guessed easily enough what impression\nsuch an episode was likely to have made, and being still in a way\nidentified with this house, he blushed for Nyosan’s immodesty.",
-      "quijote_source": "and went along thrumming the letters as if they were a tambourine",
+      "quijote_source": "With this Teresa hurried out of the house with the letters, and with the\nstring of beads round her neck, and went along thrumming the letters as\nif they were a tambourine, and",
       "genji_chars": [
         "Yugiri",
         "Nyosan"
@@ -11565,7 +11565,7 @@
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 2 CHAPTER L.",
         "sentence_index": 5,
         "half_strategy": "clause_boundary"
       }
@@ -13690,7 +13690,7 @@
       "genji_half": "But there is a hint that Tamakatsura is shut away",
       "quijote_half": "Doomed for a lady-love to languish",
       "genji_source": "But there is a hint that Tamakatsura is shut away in Higekuro’s\npalace like a tame bird in a cage.",
-      "quijote_source": "Doomed for a lady-love to languish",
+      "quijote_source": "The lealest lover time can show,\n  Doomed for a lady-love to languish,",
       "genji_chars": [
         "Tamakatsura",
         "Higekuro"
@@ -13704,7 +13704,7 @@
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 1 CHAPTER XXVI.",
         "sentence_index": 5,
         "half_strategy": "clause_boundary"
       }
@@ -14035,7 +14035,7 @@
       "genji_half": "Ukon herself was the bearer of this letter; she also reported much of what Genji had said to her,",
       "quijote_half": "and threatened to stab Leonela, bidding her tell the truth",
       "genji_source": "Ukon herself was the bearer of this letter; she also reported much of\nwhat Genji had said to her, especially such expressions of cordiality\nand goodwill as would tend to allay Tamakatsura’s apprehensions.",
-      "quijote_source": "and threatened to stab Leonela, bidding her tell the truth",
+      "quijote_source": "Anselmo would not believe it, but blind with rage drew a dagger and\nthreatened to stab Leonela, bidding her tell the truth or he would kill\nher.",
       "genji_chars": [
         "Genji",
         "Tamakatsura",
@@ -14050,7 +14050,7 @@
         "half_strategy": "clause_boundary"
       },
       "quijote_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 1 CHAPTER XXXV.",
         "sentence_index": 12,
         "half_strategy": "clause_boundary"
       }
@@ -14518,7 +14518,7 @@
       "genji_half": "Meanwhile his frequent absences from the Nijō-in had already convinced Murasaki",
       "quijote_half": "in ceaseless wanderings and rude and arduous toils",
       "genji_source": "Meanwhile his frequent absences from the Nijō-in had already convinced\nMurasaki that the affair was as serious as it could possibly be.",
-      "quijote_source": "in ceaseless wanderings and rude and arduous toils",
+      "quijote_source": "can it be, most serene Casildea de\nVandalia, that thou wilt suffer this thy captive knight to waste away and\nperish in ceaseless wanderings and rude and arduous toils?",
       "genji_chars": [
         "Murasaki"
       ],
@@ -14531,7 +14531,7 @@
         "half_strategy": "word_midpoint"
       },
       "quijote_meta": {
-        "chapter": "pinned",
+        "chapter": "VOLUME 2 CHAPTER XII.",
         "sentence_index": 7,
         "half_strategy": "clause_boundary"
       }

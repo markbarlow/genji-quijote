@@ -2,7 +2,7 @@
 General:
 Choice of the J for Quijote
 
-Konnichiwa, saludos! What would happen if the worlds of Prince Genji and Don Quijote were to collide? If the world's first novel met the West's first novel? If the mono no aware and interior, seasonal, melancholy tone of the former ran into the comic, delusional, earthy tone of the latter?
+Konnichiwa, &#161;saludos! What would happen if the worlds of Prince Genji and Don Quijote were to collide? If the world's first novel met the West's first novel? If the mono no aware and interior, seasonal, melancholy tone of the former ran into the comic, delusional, earthy tone of the latter?
 
 This project seeks to answer those questions with sentences composed from the two works, in the <a href="https://en.wikipedia.org/wiki/Exquisite_corpse">exquisite corpse</a< tradition. 1,021 sentences to be precise, in honour of the year Murasaki Shikibu finished The Tale of Genji, using as source text the public domain works from Project Gutenburg. The Genji translation by Suematsu Kenchio is paired with the John Ormsby translation of Miguel de Cervantes' Don Quijote de la Mancha.
 
@@ -11,8 +11,7 @@ Paired here with the West's first novel, Miguel de Cervantes' Don Quijote de la 
 the first half from Genji the second half from Quijote,
 
 
-
-
+<a href="https://en.wikipedia.org/wiki/Exquisite_corpse">exquisite corpse</a>
 
 Pipeline reads the source texts, cleans and segments them into sentences, halves each sentence at a clause boundary, scores sentence halves, and pairs the top-scoring Genji halves with top-scoring Quixote halves.
 
