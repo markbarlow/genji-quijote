@@ -155,6 +155,19 @@ def main() -> None:
             # Update source attribution to follow the (possibly trimmed) half text.
             g_source, g_chapter = _resolve_genji(new_genji)
             q_source, q_chapter = _resolve_quijote(new_quijote)
+            # Cross-half fallback: if one side can't be resolved (e.g. a half was
+            # copied from another row), use the unchanged other half to locate the
+            # original pool pair and recover its source/chapter data.
+            if g_chapter == "pinned":
+                fallback = pool_pair_by_quijote_half.get(new_quijote)
+                if fallback:
+                    g_source = fallback["genji_source"]
+                    g_chapter = fallback["genji_meta"]["chapter"]
+            if q_chapter == "pinned":
+                fallback = pool_pair_by_genji_half.get(new_genji)
+                if fallback:
+                    q_source = fallback["quijote_source"]
+                    q_chapter = fallback["quijote_meta"]["chapter"]
             pair["genji_source"] = g_source
             pair["quijote_source"] = q_source
             pair["genji_meta"] = dict(pair["genji_meta"])

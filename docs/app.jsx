@@ -959,6 +959,8 @@ function AboutOverlay({ mono, onClose, isMobile }) {
           border: `1px solid ${PALETTE.line}`,
           padding: isMobile ? "32px 24px" : "48px 52px",
           position: "relative",
+          maxHeight: isMobile ? "calc(100svh - 48px)" : "none",
+          overflowY: isMobile ? "auto" : "visible",
         }}
       >
         <div
@@ -987,7 +989,7 @@ function AboutOverlay({ mono, onClose, isMobile }) {
 
         <p
           style={{
-            fontSize: 15,
+            fontSize: 16,
             lineHeight: 1.7,
             color: PALETTE.inkDim,
             margin: "0 0 16px",
@@ -997,7 +999,7 @@ Konnichiwa, &#161;saludos! What would happen if the worlds of Prince Genji and D
         </p>
         <p
           style={{
-            fontSize: 15,
+            fontSize: 16,
             lineHeight: 1.7,
             color: PALETTE.inkDim,
             margin: "0 0 28px",
