@@ -1005,7 +1005,7 @@ Konnichiwa, &#161;saludos! What would happen if the worlds of Prince Genji and D
             margin: "0 0 28px",
           }}
         >
-This project seeks to answer those questions with sentences composed from the two works, in the exquisite corpse tradition. 1,021 sentences to be precise, in honour of the year Murasaki Shikibu finished <em>The Tale of Genji</em>, using as source text the public domain works from Project Gutenburg. The Genji translation by Suematsu Kenchio is paired with the John Ormsby translation of Miguel de Cervantes' <em>Don Quijote de la Mancha</em>.
+This project seeks to answer those questions with sentences composed from the two works, in the exquisite corpse tradition. 1,021 sentences to be precise, in honour of the year Murasaki Shikibu finished <em>The Tale of Genji</em>. Using as source text the public domain works from Project Gutenburg, the Genji translation by Suematsu Kenchio is paired with the John Ormsby translation of Miguel de Cervantes' <em>Don Quijote de la Mancha</em>. Musical accompaniment by Mulberry Harbour.
         </p>
 
         {/* Legend */}
@@ -1065,9 +1065,9 @@ This project seeks to answer those questions with sentences composed from the tw
           Related
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-          <a href="#" style={linkStyle}>The Memory Palace →</a>
-          <a href="#" style={linkStyle}>Mulberry Harbour music →</a>
-          <a href="#" style={linkStyle}>The Lexicorium →</a>
+          <a href="https://www.markbarlow.co.uk/memory-palace/" style={linkStyle}>The Memory Palace →</a>
+          <a href="https://soundcloud.com/mulberryharbour/sets/mulberry-harbour-sampler" style={linkStyle}>Mulberry Harbour →</a>
+          <a href="https://lexicorium.vercel.app" style={linkStyle}>The Lexicorium →</a>
         </div>
 
         {/* Keyboard shortcuts — desktop only (mobile has no keyboard) */}
