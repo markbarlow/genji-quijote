@@ -943,9 +943,9 @@ function AboutOverlay({ mono, onClose, isMobile }) {
         backdropFilter: "blur(6px)",
         zIndex: 100,
         display: "flex",
-        alignItems: "center",
+        alignItems: "flex-start",
         justifyContent: "center",
-        padding: isMobile ? "24px 16px" : "60px 32px",
+        padding: isMobile ? "0 16px 24px" : "0 32px 60px",
         animation: "fadeIn 240ms ease-out",
         overflowY: "auto",
       }}
@@ -959,8 +959,6 @@ function AboutOverlay({ mono, onClose, isMobile }) {
           border: `1px solid ${PALETTE.line}`,
           padding: isMobile ? "32px 24px" : "48px 52px",
           position: "relative",
-          maxHeight: isMobile ? "calc(100svh - 48px)" : "none",
-          overflowY: isMobile ? "auto" : "visible",
         }}
       >
         <div
