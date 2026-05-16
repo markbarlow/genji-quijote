@@ -55,16 +55,16 @@ gq-0463
 For example, her stepmother had even held her responsible for Makibashira's fall; and Don Quixote went some twelve paces forward to meet her.
 
 
-gq-0486
+gq-0486 Y
 Having delivered this message Koremitsu brought in some of Genji's servants and went home to his village to wait there for Don Quixote, who was coming after him.
 
-gq-0488
+gq-0488 Y
 Although it was early days to begin thinking about the little Akashi Princess's Initiation, the duchess was as much delighted as Don Quixote was driven to desperation.
 
-gq-0016
+gq-0016 Y
 After performing before the Emperor, the Mummers visited the quarters of Lady Akikonomu, to describe the end of the government of the great Sancho Panza, flower and mirror of all governors of islands.
 
-gq-0006
+gq-0006 Y
 Koremitsu had patiently continued the enquiry and got his master's blessing, which Don Quixote gave him with tears, and he received blubbering.
 
 gq-0013

@@ -1045,7 +1045,7 @@ This project seeks to answer those questions with sentences composed from the tw
           Blog post
         </div>
         <div style={{ marginBottom: 24 }}>
-          <a href="#" style={linkStyle}>
+          <a href="https://www.markbarlow.co.uk/memory-palace/2026/05/16/tale-of-genji-and-quijote.html" style={linkStyle}>
             The Tale of Genji and Quijote →
           </a>
         </div>
